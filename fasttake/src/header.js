@@ -5,7 +5,7 @@ const Header = () => {
   const { textStyle, viewStyle } = styles;
   return (
     <View style={viewStyle}>
-      <Text style={textStyle}> fasttake</Text>
+      <Text style={textStyle}>fasttake</Text>
     </View>
   );
 };
@@ -13,17 +13,14 @@ const Header = () => {
 const styles = {
   textStyle: {
     fontSize: 40,
-    fontWeight: "bold",
+    fontWeight: '200',
     color: "black"
   },
   viewStyle: {
-    marginTop: 40,
+    marginTop: 0,
     marginBottom: 10,
-    height: 49,
     justifyContent: 'flex-start',
-    alignItems: 'baseline',
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0
+    alignItems: 'center',
   }
 }
 
