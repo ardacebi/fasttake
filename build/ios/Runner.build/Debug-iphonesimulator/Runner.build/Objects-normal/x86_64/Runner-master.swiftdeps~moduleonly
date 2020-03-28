@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "f7b8cdb0b5777bb0d5b3862b222e0189"
+build_time: [1585416295, 659059000]
+inputs:
+  "/Users/baranonen/Desktop/GitHub/fasttake/ios/Runner/AppDelegate.swift": [1585415460, 778943795]

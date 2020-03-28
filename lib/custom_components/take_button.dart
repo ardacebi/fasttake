@@ -1,5 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'dart:ui';
+import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
 
 class CustomButton extends StatelessWidget {
   CustomButton({@required this.onPressed});
@@ -8,24 +10,22 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      fillColor: Colors.white,
+      elevation: 0,
+      fillColor: Colors.grey[300],
       splashColor: Colors.blueGrey,
       child: Padding(
-        padding: EdgeInsets.all(10.0),
+        padding: EdgeInsets.all(40.0),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: const <Widget>[
-            Icon(
-              Icons.add,
-              color: Colors.black,
-            ),
+            const Icon(SFSymbols.plus_circle),
             SizedBox(
               width: 10.0,
             ),
             Text(
               "New take",
               maxLines: 1,
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(fontFamily: 'JosefinSans', fontSize: 40, color: Colors.black, fontWeight: FontWeight.w200),
             ),
           ],
         ),

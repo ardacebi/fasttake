@@ -1,6 +1,7 @@
-import 'package:fasttake/home.dart';
 import 'package:fasttake/settings.dart';
 import 'package:flutter/material.dart';
+import 'custom_components/take_button.dart';
+import 'custom_components/search.dart';
 
 void main() => runApp(MyApp());
 
@@ -61,19 +62,6 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  int _selectedIndex = 0;
-  final List<Widget> _children = [
-
-    HomePage(),
-    SettingsPage(),
-  
-];
-
-void _onItemTapped(int index) {
-  setState(() {
-    _selectedIndex = index;
-  });
-}
 
 
   @override
@@ -86,23 +74,95 @@ void _onItemTapped(int index) {
     // than having to individually change instances of widgets.
     return Scaffold(
       
-      body: _children[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-      items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          title: Text('Home'),
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.settings),
-          title: Text('Settings'),
+       body: SingleChildScrollView(
+        // Center is a layout widget. It takes a single child and positions it
+        // in the middle of the parent.
+        child: Container(
+          
+          child: Column(
+            // Column is also a layout widget. It takes a list of children and
+            // arranges them vertically. By default, it sizes itself to fit its
+            // children horizontally, and tries to be as tall as its parent.
+            //
+            // Invoke "debug painting" (press "p" in the console, choose the
+            // "Toggle Debug Paint" action from the Flutter Inspector in Android
+            // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
+            // to see the wireframe for each widget.
+            //
+            // Column has various properties to control how it sizes itself and
+            // how it positions its children. Here we use mainAxisAlignment to
+            // center the children vertically; the main axis here is the vertical
+            // axis because Columns are vertical (the cross axis would be
+            // horizontal).
+            children: <Widget>[
+              Container(
+                margin: const EdgeInsets.only(top: 60.0),
+                child: Text(
+                  'fasttake',
+                  style: TextStyle(fontFamily: 'JosefinSans', fontSize: 50, color: Colors.black, fontWeight: FontWeight.w200),
+                ),
+              ),
+              
+              Container(
+                margin:
+                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 10.0),
+                child: TextField(
+                  decoration: customSearch,
+                ),
+              ),
+              Container(
+                margin:
+                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
+                
+                child: Card(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 20.0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        const ListTile(
+                          title: Text(
+                            'This is an instant take',
+                          ),
+                          subtitle: Text(
+                              'The base of my idea is to create an application that...'),
+                        ),
+                        ButtonBar(
+                          children: <Widget>[
+                            IconButton(
+                              icon: Icon(Icons.delete),
+                              tooltip: 'Delete take',
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.more_vert),
+                              tooltip: 'More options',
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              ConstrainedBox(
+                constraints: const BoxConstraints(minWidth: double.infinity),
+                child: Container(
+                  margin:
+                      const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
+                  child: CustomButton(
+                    onPressed: () {},
+                  ),
+                ),
+              ),
+            ],
+          ),
+          
         ),
         
-      ],
-      currentIndex: _selectedIndex,
-      selectedItemColor: Colors.teal[500],
-      onTap: _onItemTapped,
-    ),
+      ),
+      
   );
   }
 }

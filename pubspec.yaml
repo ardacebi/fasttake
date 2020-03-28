@@ -23,6 +23,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  flutter_sfsymbols: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -79,6 +80,9 @@ flutter:
         - asset: fonts/JosefinSans-BoldItalic.ttf
           style: italic
           weight: 700
+    - family: sficonsets
+      fonts:
+        - asset: packages/flutter_sfsymbols/fonts/sficonsets.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

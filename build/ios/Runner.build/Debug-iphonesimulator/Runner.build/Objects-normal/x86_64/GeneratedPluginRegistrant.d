@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Runner/GeneratedPluginRegistrant.m \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Runner/GeneratedPluginRegistrant.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Modules/module.modulemap \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/baranonen/Desktop/GitHub/fasttake/ios/Flutter/Flutter.framework/Headers/Flutter.h
