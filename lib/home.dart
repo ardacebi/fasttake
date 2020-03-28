@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
               gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Colors.teal, Colors.white])),
+                  colors: [Colors.teal[500], Colors.teal[900]])),
           child: Column(
             // Column is also a layout widget. It takes a list of children and
             // arranges them vertically. By default, it sizes itself to fit its
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
                 margin: const EdgeInsets.only(top: 60.0),
                 child: Text(
                   'fasttake',
-                  style: TextStyle(fontFamily: 'JosefinSans', fontSize: 50),
+                  style: TextStyle(fontFamily: 'JosefinSans', fontSize: 50, color: Colors.white),
                 ),
               ),
               ConstrainedBox(
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 145,
+                
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 145,
+                
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 145,
+                
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -171,7 +171,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 145,
+                
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -207,7 +207,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 145,
+                
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -243,7 +243,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 145,
+                
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -279,7 +279,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 145,
+                
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -315,7 +315,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 145,
+                
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
