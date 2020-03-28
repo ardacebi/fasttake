@@ -46,10 +46,10 @@ class _HomePageState extends State<HomePage> {
               ConstrainedBox(
                 constraints: const BoxConstraints(minWidth: double.infinity),
                 child: Container(
-                  margin: const EdgeInsets.only(left:25.0, right:25.0, top:20.0),
+                  margin:
+                      const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
                   child: CustomButton(
                     onPressed: () {},
-                   
                   ),
                 ),
               ),
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
+                height: 145,
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -77,6 +77,20 @@ class _HomePageState extends State<HomePage> {
                           subtitle: Text(
                               'The base of my idea is to create an application that...'),
                         ),
+                        ButtonBar(
+                          children: <Widget>[
+                            IconButton(
+                              icon: Icon(Icons.delete),
+                              tooltip: 'Delete take',
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.more_vert),
+                              tooltip: 'More options',
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -85,7 +99,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
+                height: 145,
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -99,6 +113,20 @@ class _HomePageState extends State<HomePage> {
                           subtitle: Text(
                               'The base of my idea is to create an application that...'),
                         ),
+                        ButtonBar(
+                          children: <Widget>[
+                            IconButton(
+                              icon: Icon(Icons.delete),
+                              tooltip: 'Delete take',
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.more_vert),
+                              tooltip: 'More options',
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -107,7 +135,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
+                height: 145,
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -121,6 +149,20 @@ class _HomePageState extends State<HomePage> {
                           subtitle: Text(
                               'The base of my idea is to create an application that...'),
                         ),
+                        ButtonBar(
+                          children: <Widget>[
+                            IconButton(
+                              icon: Icon(Icons.delete),
+                              tooltip: 'Delete take',
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.more_vert),
+                              tooltip: 'More options',
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -129,7 +171,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
+                height: 145,
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -143,6 +185,20 @@ class _HomePageState extends State<HomePage> {
                           subtitle: Text(
                               'The base of my idea is to create an application that...'),
                         ),
+                        ButtonBar(
+                          children: <Widget>[
+                            IconButton(
+                              icon: Icon(Icons.delete),
+                              tooltip: 'Delete take',
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.more_vert),
+                              tooltip: 'More options',
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -151,7 +207,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
+                height: 145,
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -165,6 +221,20 @@ class _HomePageState extends State<HomePage> {
                           subtitle: Text(
                               'The base of my idea is to create an application that...'),
                         ),
+                        ButtonBar(
+                          children: <Widget>[
+                            IconButton(
+                              icon: Icon(Icons.delete),
+                              tooltip: 'Delete take',
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.more_vert),
+                              tooltip: 'More options',
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -173,7 +243,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
+                height: 145,
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -187,6 +257,20 @@ class _HomePageState extends State<HomePage> {
                           subtitle: Text(
                               'The base of my idea is to create an application that...'),
                         ),
+                        ButtonBar(
+                          children: <Widget>[
+                            IconButton(
+                              icon: Icon(Icons.delete),
+                              tooltip: 'Delete take',
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.more_vert),
+                              tooltip: 'More options',
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -195,7 +279,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
+                height: 145,
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -209,6 +293,20 @@ class _HomePageState extends State<HomePage> {
                           subtitle: Text(
                               'The base of my idea is to create an application that...'),
                         ),
+                        ButtonBar(
+                          children: <Widget>[
+                            IconButton(
+                              icon: Icon(Icons.delete),
+                              tooltip: 'Delete take',
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.more_vert),
+                              tooltip: 'More options',
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -217,7 +315,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
+                height: 145,
                 child: Card(
                   child: Padding(
                     padding: EdgeInsets.only(top: 20.0),
@@ -231,93 +329,19 @@ class _HomePageState extends State<HomePage> {
                           subtitle: Text(
                               'The base of my idea is to create an application that...'),
                         ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
-                child: Card(
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          title: Text(
-                            'This is an instant take',
-                          ),
-                          subtitle: Text(
-                              'The base of my idea is to create an application that...'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
-                child: Card(
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          title: Text(
-                            'This is an instant take',
-                          ),
-                          subtitle: Text(
-                              'The base of my idea is to create an application that...'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
-                child: Card(
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          title: Text(
-                            'This is an instant take',
-                          ),
-                          subtitle: Text(
-                              'The base of my idea is to create an application that...'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
-                child: Card(
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          title: Text(
-                            'This is an instant take',
-                          ),
-                          subtitle: Text(
-                              'The base of my idea is to create an application that...'),
+                        ButtonBar(
+                          children: <Widget>[
+                            IconButton(
+                              icon: Icon(Icons.delete),
+                              tooltip: 'Delete take',
+                              onPressed: () {},
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.more_vert),
+                              tooltip: 'More options',
+                              onPressed: () {},
+                            ),
+                          ],
                         ),
                       ],
                     ),
