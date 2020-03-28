@@ -5,7 +5,7 @@ InputDecoration customSearch = InputDecoration(
   border: OutlineInputBorder(
     borderRadius: BorderRadius.circular(50.0),
   ),
-  fillColor: Colors.grey[200],
+  fillColor: Colors.white,
   filled: true,
   prefixIcon: Icon(
     Icons.search,
