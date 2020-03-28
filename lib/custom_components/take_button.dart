@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
 
-class CustomButton extends StatelessWidget {
-  CustomButton({@required this.onPressed});
+class TakeButton extends StatelessWidget {
+  TakeButton({@required this.onPressed});
   final GestureTapCallback onPressed;
 
   @override

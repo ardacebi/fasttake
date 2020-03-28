@@ -2,6 +2,7 @@ import 'package:fasttake/settings.dart';
 import 'package:flutter/material.dart';
 import 'custom_components/take_button.dart';
 import 'custom_components/search.dart';
+import 'custom_components/take.dart';
 
 void main() => runApp(MyApp());
 
@@ -114,31 +115,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
                 
-                child: Card(
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          title: Text(
-                            'This is an instant take',
-                          ),
-                          subtitle: Text(
-                              'The base of my idea is to create an application that...'),
-                        ),
-                        ButtonBar(
-                          children: <Widget>[
-                            IconButton(
-                              icon: Icon(Icons.more_vert),
-                              tooltip: 'More options',
-                              onPressed: () {},
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
+                child: TakeCard(
+                  onPressed: () {},
                 ),
               ),
               ConstrainedBox(
@@ -146,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   margin:
                       const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                  child: CustomButton(
+                  child: TakeButton(
                     onPressed: () {},
                   ),
                 ),
