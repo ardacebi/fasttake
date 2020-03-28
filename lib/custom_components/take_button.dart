@@ -9,22 +9,25 @@ class TakeButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RawMaterialButton(
+    return FlatButton(
+      color: Colors.grey[300],
       highlightColor: Colors.transparent,
       splashColor: Colors.transparent,
-      elevation: 0,
-      fillColor: Colors.grey[300],
+      shape: RoundedRectangleBorder(
+          side: BorderSide(
+              color: Colors.grey[800], width: 1, style: BorderStyle.solid),
+          borderRadius: BorderRadius.circular(10)),
       child: Padding(
         padding: EdgeInsets.all(40.0),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Container(
-             margin: const EdgeInsets.only(bottom: 12.0),
+              margin: const EdgeInsets.only(bottom: 12.0),
               child: Icon(
-              SFSymbols.plus_circle_fill, 
-              color: Colors.grey[900], 
-              size:40.0,
+                SFSymbols.plus_circle_fill,
+                color: Colors.grey[900],
+                size: 40.0,
               ),
             ),
             SizedBox(
@@ -33,15 +36,17 @@ class TakeButton extends StatelessWidget {
             Text(
               "New take",
               maxLines: 1,
-              style: TextStyle(fontFamily: 'JosefinSans', fontSize: 40, color: Colors.black, fontWeight: FontWeight.w200),
+              style: TextStyle(
+                  fontFamily: 'JosefinSans',
+                  fontSize: 40,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w200),
             ),
           ],
         ),
       ),
       onPressed: onPressed,
-      shape: RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(10.0)
-    ),
+      
     );
   }
 }
