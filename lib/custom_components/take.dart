@@ -11,6 +11,9 @@ class TakeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+    borderRadius: BorderRadius.circular(50.0),
+  ),
+      elevation: 0,
       child: Padding(
         padding: EdgeInsets.only(top: 20.0),
         child: Column(
