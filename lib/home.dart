@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'custom_components/search.dart';
+import 'custom_components/take_button.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -42,83 +43,21 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(fontFamily: 'JosefinSans', fontSize: 50),
                 ),
               ),
+              ConstrainedBox(
+                constraints: const BoxConstraints(minWidth: double.infinity),
+                child: Container(
+                  margin: const EdgeInsets.only(left:25.0, right:25.0, top:20.0),
+                  child: CustomButton(
+                    onPressed: () {},
+                   
+                  ),
+                ),
+              ),
               Container(
                 margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
+                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 10.0),
                 child: TextField(
                   decoration: customSearch,
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
-                child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15.0),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          title: Text(
-                            'This is an instant take',
-                          ),
-                          subtitle: Text(
-                              'The base of my idea is to create an application that...'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
-                child: Card(
-                  shape: BeveledRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          title: Text(
-                            'This is an instant take',
-                          ),
-                          subtitle: Text(
-                              'The base of my idea is to create an application that...'),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                height: 100,
-                child: Card(
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          title: Text(
-                            'This is an instant take',
-                          ),
-                          subtitle: Text(
-                              'The base of my idea is to create an application that...'),
-                        ),
-                      ],
-                    ),
-                  ),
                 ),
               ),
               Container(
