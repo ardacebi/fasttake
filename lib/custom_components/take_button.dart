@@ -10,15 +10,16 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
+      highlightColor: Colors.transparent,
+      splashColor: Colors.transparent,
       elevation: 0,
       fillColor: Colors.grey[300],
-      splashColor: Colors.blueGrey,
       child: Padding(
         padding: EdgeInsets.all(40.0),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: const <Widget>[
-            const Icon(SFSymbols.plus_circle),
+            const Icon(SFSymbols.plus_circle, size:40.0),
             SizedBox(
               width: 10.0,
             ),
