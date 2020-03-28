@@ -8,7 +8,8 @@ class SettingsPage extends StatefulWidget {
 class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Center(
+      child: Column(
 
       children: <Widget>[
               Container(
@@ -19,6 +20,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ),
       ],
+      ),
       
     );
   }
