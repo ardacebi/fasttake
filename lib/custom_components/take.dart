@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+enum WhyFarther { delete, pin }
+
+int _selection = 0;
+
 class TakeCard extends StatelessWidget {
   TakeCard({@required this.onPressed});
   final GestureTapCallback onPressed;
@@ -21,11 +25,20 @@ class TakeCard extends StatelessWidget {
             ),
             ButtonBar(
               children: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.more_vert),
-                  tooltip: 'More options',
-                  onPressed: () {},
-                ),
+                PopupMenuButton<WhyFarther>(
+                  onSelected: (WhyFarther result) {},
+                  itemBuilder: (BuildContext context) =>
+                      <PopupMenuEntry<WhyFarther>>[
+                    const PopupMenuItem<WhyFarther>(
+                      value: WhyFarther.delete,
+                      child: Text('Delete'),
+                    ),
+                    const PopupMenuItem<WhyFarther>(
+                      value: WhyFarther.pin,
+                      child: Text('Pin'),
+                    ),
+                  ],
+                )
               ],
             ),
           ],
