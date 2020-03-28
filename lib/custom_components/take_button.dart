@@ -18,8 +18,15 @@ class CustomButton extends StatelessWidget {
         padding: EdgeInsets.all(40.0),
         child: Row(
           mainAxisSize: MainAxisSize.min,
-          children: const <Widget>[
-            const Icon(SFSymbols.plus_circle_fill, color: Colors.black87, size:40.0),
+          children: <Widget>[
+            Container(
+             margin: const EdgeInsets.only(bottom: 12.0),
+              child: Icon(
+              SFSymbols.plus_circle_fill, 
+              color: Colors.grey[900], 
+              size:40.0,
+              ),
+            ),
             SizedBox(
               width: 10.0,
             ),

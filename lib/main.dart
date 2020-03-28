@@ -130,11 +130,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         ButtonBar(
                           children: <Widget>[
                             IconButton(
-                              icon: Icon(Icons.delete),
-                              tooltip: 'Delete take',
-                              onPressed: () {},
-                            ),
-                            IconButton(
                               icon: Icon(Icons.more_vert),
                               tooltip: 'More options',
                               onPressed: () {},
