@@ -2,7 +2,10 @@
 
 An app to take notes of those that come up on your mind without waiting. Written with Flutter and Dart.
 
-## How to build
+## Features
+Coming soon
+
+## How to build and contribute
 
 ### 1. Install Flutter
 Prepare your development environment from this official installation guide from the Flutter team.
@@ -10,9 +13,8 @@ Prepare your development environment from this official installation guide from 
 ### 2. Clone the repository
 Clone the fasttake repository.
 
-''
-git clone https://github.com/ardacebi/fasttake
-''
+
+`git clone https://github.com/ardacebi/fasttake`
 
 ### 3. Preview app and start development
 Using your favorite IDE, you can start previewing the current status of the app by launching the app on an emulator or your physical device and start making your edits.
