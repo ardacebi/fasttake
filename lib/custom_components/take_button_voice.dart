@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'dart:ui';
 import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
 
 class TakeButtonVoice extends StatelessWidget {
