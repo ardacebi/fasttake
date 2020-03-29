@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class SettingsPage extends StatefulWidget {
+class SettingsRoute extends StatefulWidget {
   @override
-  _SettingsPageState createState() => _SettingsPageState();
+  _SettingsRouteState createState() => _SettingsRouteState();
 }
 
-class _SettingsPageState extends State<SettingsPage> {
+class _SettingsRouteState extends State<SettingsRoute> {
   @override
   Widget build(BuildContext context) {
     return Center(
