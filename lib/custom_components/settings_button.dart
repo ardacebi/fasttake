@@ -26,7 +26,7 @@ class SettingsButton extends StatelessWidget {
             SizedBox(
               width: 10.0,
             ),
-            Text("settings", style: TextStyle(fontSize: 25.0, fontFamily: 'JosefinSans',)),
+            Text("settings", style: TextStyle(fontSize: 35.0, fontFamily: 'JosefinSans', fontWeight: FontWeight.w300)),
           ],
         ),
       ),
