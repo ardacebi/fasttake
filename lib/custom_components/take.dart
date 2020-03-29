@@ -35,6 +35,7 @@ class TakeCard extends StatelessWidget {
               ButtonBar(
                 children: <Widget>[
                   PopupMenuButton<WhyFarther>(
+                    tooltip: "More options",
                     onSelected: (WhyFarther result) {},
                     itemBuilder: (BuildContext context) =>
                         <PopupMenuEntry<WhyFarther>>[
