@@ -110,28 +110,54 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 10.0),
-                child: TextField(
-                  decoration: customSearch,
+                decoration: BoxDecoration(
+                  border: Border(
+                    left: BorderSide(
+                      color: Colors.grey,
+                      width: 1.0,
+                    ),
+                    top: BorderSide(
+                      color: Colors.grey,
+                      width: 1.0,
+                    ),
+                    right: BorderSide(
+                      color: Colors.grey,
+                      width: 1.0,
+                    ),
+                    bottom: BorderSide(
+                      color: Colors.grey,
+                      width: 1.0,
+                    ),
+                  ),
                 ),
-              ),
-              Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                child: TakeCard(
-                  onPressed: () {},
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      margin: const EdgeInsets.only(
+                          left: 25.0, right: 25.0, top: 10.0),
+                      child: TextField(
+                        decoration: customSearch,
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.only(
+                          left: 25.0, right: 25.0, top: 20.0),
+                      child: TakeCard(
+                        onPressed: () {},
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Container(
                 margin: EdgeInsets.only(top: 30.0),
                 child: Text(
-                  "New take",
-                  style: TextStyle(fontSize: 30),
+                  "new take",
+                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.w300),
                 ),
               ),
               new Container(
-                child: new Wrap(
+                child: new Column(
                   children: <Widget>[
                     new ConstrainedBox(
                       constraints:

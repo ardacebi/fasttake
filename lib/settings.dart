@@ -13,7 +13,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           backgroundColor: Colors.transparent,
           bottomOpacity: 0.0,
           elevation: 0.0,
-          title: new Text('Settings',
+          title: new Text('settings',
               style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0)),
           actions: <Widget>[
             IconButton(
