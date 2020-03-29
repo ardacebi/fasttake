@@ -158,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 constraints: const BoxConstraints(minWidth: double.infinity),
                 child: Container(
                   margin:
-                      const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
+                      const EdgeInsets.only(left: 25.0, right: 25.0, top: 10.0),
                   child: SettingsButton(
                     onPressed: () {
                       Navigator.push(
