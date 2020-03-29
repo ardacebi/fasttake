@@ -14,7 +14,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           bottomOpacity: 0.0,
           elevation: 0.0,
           title: new Text('settings',
-              style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0)),
+              style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0, fontFamily: 'JosefinSans')),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.search),
@@ -28,30 +28,9 @@ class _SettingsRouteState extends State<SettingsRoute> {
           tiles: [
             ListTile(
               leading: Icon(Icons.notifications),
-              title: Text('Notifications'),
+              title: Text('Notifications', style: TextStyle(fontFamily: 'JosefinSans')),
               trailing: Icon(Icons.keyboard_arrow_right),
-              subtitle: Text('Manage your push notification settings'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.notifications),
-              title: Text('Notifications'),
-              trailing: Icon(Icons.keyboard_arrow_right),
-              subtitle: Text('Manage your push notification settings'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.notifications),
-              title: Text('Notifications'),
-              trailing: Icon(Icons.keyboard_arrow_right),
-              subtitle: Text('Manage your push notification settings'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.notifications),
-              title: Text('Notifications'),
-              trailing: Icon(Icons.keyboard_arrow_right),
-              subtitle: Text('Manage your push notification settings'),
+              subtitle: Text('Manage your push notification settings', style: TextStyle(fontFamily: 'JosefinSans')),
               onTap: () {},
             ),
           ],
