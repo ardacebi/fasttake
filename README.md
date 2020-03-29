@@ -13,7 +13,6 @@ An app to take notes of those that come up on your mind without waiting. Written
         - [ ] New Take Page
     - [ ] Remove Material typed widgets
     - [ ] Create mutual area that holds search bar and take cards (separate from new take button)
-    - [ ] 
   - [ ] Development
     - [ ] Initialize local database features
     - [ ] Take creation and deletion
