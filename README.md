@@ -12,7 +12,6 @@ An app to take notes of those that come up on your mind without waiting. Written
 <img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/stars/fasttake/fasttake?style=social"></img>
 
 ## Roadmap and to-do
 - [ ] v1.0.0
