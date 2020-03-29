@@ -7,7 +7,7 @@ class TakeButtonVoice extends StatelessWidget {
   TakeButtonVoice({@required this.onPressed});
   final GestureTapCallback onPressed;
 
-  @override
+ @override
   Widget build(BuildContext context) {
     return FlatButton(
       color: Colors.grey[300],
@@ -22,19 +22,11 @@ class TakeButtonVoice extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Container(
-              margin: const EdgeInsets.only(bottom: 12.0),
-              
-            ),
-            SizedBox(
-              
-            ),
-            const Icon(SFSymbols.badge_plus_radiowaves_right, size: 70.0,),
+            const Icon(SFSymbols.mic, size: 70.0),
           ],
         ),
       ),
       onPressed: onPressed,
-      
     );
   }
 }
