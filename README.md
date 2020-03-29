@@ -16,7 +16,7 @@ An app to take notes of those that come up on your mind without waiting. Written
 - [ ] v1.0.0
   - [ ] Design
     - [ ] Finish pages and design
-        - [ ] Home Page
+        - [x] Home Page
         - [ ] Settings Page
         - [ ] Feedback Page (inside settings page)
         - [ ] About Page (inside settings page)
