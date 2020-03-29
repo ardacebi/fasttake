@@ -1,4 +1,4 @@
-#Sat Mar 28 17:34:15 EET 2020
+#Sun Mar 29 00:13:43 EET 2020
 base.0=/Users/ardacebi/fasttake/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -24,11 +24,7 @@ class TakeButton extends StatelessWidget {
           children: <Widget>[
             Container(
               margin: const EdgeInsets.only(bottom: 12.0),
-              child: Icon(
-                SFSymbols.plus_circle_fill,
-                color: Colors.grey[900],
-                size: 40.0,
-              ),
+              
             ),
             SizedBox(
               width: 10.0,
@@ -40,7 +36,7 @@ class TakeButton extends StatelessWidget {
                   fontFamily: 'JosefinSans',
                   fontSize: 40,
                   color: Colors.black,
-                  fontWeight: FontWeight.w200),
+                  fontWeight: FontWeight.w300),
             ),
           ],
         ),
