@@ -124,12 +124,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top:30.0),
-                child: Text("New take", style: TextStyle(fontSize: 30),),
+                margin: EdgeInsets.only(top: 30.0),
+                child: Text(
+                  "New take",
+                  style: TextStyle(fontSize: 30),
+                ),
               ),
               new Container(
                 child: new Wrap(
-                  
                   children: <Widget>[
                     new ConstrainedBox(
                       constraints:
@@ -154,23 +156,25 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                   ],
-                  
                 ),
               ),
               new ConstrainedBox(
-                      constraints:
-                          const BoxConstraints(minWidth: double.infinity),
-                      child: Container(
-                        margin: const EdgeInsets.only(
-                            left: 25.0, right: 25.0, top: 20.0),
-                        child: SettingsButton(
-                          onPressed: () {},
-                        ),
-                      ),
-                    ),
+                constraints: const BoxConstraints(minWidth: double.infinity),
+                child: Container(
+                  margin:
+                      const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
+                  child: SettingsButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SettingsRoute()),
+                      );
+                    },
+                  ),
+                ),
+              ),
             ],
-
-            
           ),
         ),
       ),
