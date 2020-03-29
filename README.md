@@ -2,17 +2,17 @@
 
 An app to take notes of those that come up on your mind without waiting. Written with Flutter and Dart.
 
-<img src="https://img.shields.io/github/repo-size/ardacebi/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/commit-activity/m/ardacebi/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/contributors/ardacebi/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/v/release/ardacebi/fasttake?label=latest%20stable%20release&style=flat-square"></img>
-<img src="https://img.shields.io/github/v/release/ardacebi/fasttake?include_prereleases&label=latest%20pre-release&style=flat-square"></img>
-<img src="https://img.shields.io/github/license/ardacebi/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/issues/ardacebi/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/repo-size/ardacebi/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/repo-size/ardacebi/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/repo-size/ardacebi/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/stars/ardacebi/fasttake?style=social"></img>
+<img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
+<img src="https://img.shields.io/github/commit-activity/m/fasttake/fasttake?style=flat-square"></img>
+<img src="https://img.shields.io/github/contributors/fasttake/fasttake?style=flat-square"></img>
+<img src="https://img.shields.io/github/v/release/fasttake/fasttake?label=latest%20stable%20release&style=flat-square"></img>
+<img src="https://img.shields.io/github/v/release/fasttake/fasttake?include_prereleases&label=latest%20pre-release&style=flat-square"></img>
+<img src="https://img.shields.io/github/license/fasttake/fasttake?style=flat-square"></img>
+<img src="https://img.shields.io/github/issues/fasttake/fasttake?style=flat-square"></img>
+<img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
+<img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
+<img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
+<img src="https://img.shields.io/github/stars/fasttake/fasttake?style=social"></img>
 
 ## Roadmap and to-do
 - [ ] v1.0.0
