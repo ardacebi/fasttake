@@ -2,7 +2,6 @@
 
 An app to take notes of those that come up on your mind without waiting. Written in Flutter and Dart.
 
-<img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/commit-activity/m/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/issues/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/contributors/fasttake/fasttake?style=flat-square"></img>
