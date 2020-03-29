@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class TakeButtonText extends StatelessWidget {
   TakeButtonText({@required this.onPressed});
@@ -21,7 +21,7 @@ class TakeButtonText extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: const <Widget>[
-            const Icon(SFSymbols.text_badge_plus, size: 70.0),
+            const Icon(SimpleLineIcons.note, size: 70.0),
            
           ],
         ),

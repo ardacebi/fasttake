@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class TakeButtonVoice extends StatelessWidget {
   TakeButtonVoice({@required this.onPressed});
@@ -21,7 +21,7 @@ class TakeButtonVoice extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: const <Widget>[
-            const Icon(SFSymbols.mic, size: 70.0),
+            const Icon(SimpleLineIcons.microphone, size: 70.0),
            
           ],
         ),
