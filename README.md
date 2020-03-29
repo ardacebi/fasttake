@@ -58,7 +58,7 @@ Prepare your development environment from this official installation guide from 
 Clone the fasttake repository.
 
 
-`git clone https://github.com/ardacebi/fasttake`
+`git clone https://github.com/fasttake/fasttake`
 
 ### 3. Preview app and start development
 Using your favorite IDE, you can start previewing the current status of the app by launching the app on an emulator or your physical device and start making your edits.
