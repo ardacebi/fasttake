@@ -9,7 +9,9 @@ class TakeButtonVoice extends StatelessWidget {
 
  @override
   Widget build(BuildContext context) {
-    return FlatButton(
+    return Container(
+      margin: const EdgeInsets.only(left: 5.0),
+    child: FlatButton(
       color: Colors.grey[300],
       highlightColor: Colors.transparent,
       splashColor: Colors.transparent,
@@ -18,15 +20,17 @@ class TakeButtonVoice extends StatelessWidget {
               color: Colors.grey[800], width: 1, style: BorderStyle.solid),
           borderRadius: BorderRadius.circular(10)),
       child: Padding(
-        padding: EdgeInsets.all(40.0),
+        padding: EdgeInsets.all(35.0),
         child: Row(
           mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
+          children: const <Widget>[
             const Icon(SFSymbols.mic, size: 70.0),
+           
           ],
         ),
       ),
       onPressed: onPressed,
+    ),
     );
   }
 }

@@ -9,32 +9,30 @@ class TakeButtonText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 30.0,
+    return Container(
+      margin: const EdgeInsets.only(right: 5.0),
       child: FlatButton(
-      color: Colors.grey[300],
+        color: Colors.grey[300],
       highlightColor: Colors.transparent,
       splashColor: Colors.transparent,
       shape: RoundedRectangleBorder(
           side: BorderSide(
               color: Colors.grey[800], width: 1, style: BorderStyle.solid),
           borderRadius: BorderRadius.circular(10)),
-      child: Column(
-        children: <Widget>[
-          Padding(
-            padding: EdgeInsets.all(40.0),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                const Icon(SFSymbols.text_badge_plus, size: 70.0),
-              ],
-            ),
-          ),
-        ],
+      child: Padding(
+        padding: EdgeInsets.all(35.0),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: const <Widget>[
+            const Icon(SFSymbols.text_badge_plus, size: 70.0),
+           
+          ],
+        ),
       ),
       onPressed: onPressed,
     ),
     );
+      
     
   }
 }
