@@ -21,10 +21,10 @@ An app to take notes of those that come up on your mind without waiting. Written
         - [ ] Feedback Page (inside settings page)
         - [ ] About Page (inside settings page)
         - [ ] New Take Page
-    - [ ] Remove Material typed widgets
+    - [x] Remove Material type-d widgets
     - [ ] Create mutual area that holds search bar and take cards (separate from new take button)
   - [ ] Development
-    - [ ] Initialize local database features
+    - [x] Initialize local database features
     - [ ] Take creation and deletion
     - [ ] Take pinning
     - [ ] Tags to organize Takes
