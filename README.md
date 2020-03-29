@@ -1,4 +1,4 @@
-# fasttake
+<img src="fasttake_repo.png" alt="fasttake logo" align="middle">
 
 An app to take notes of those that come up on your mind without waiting. Written with Flutter and Dart.
 
