@@ -1,6 +1,7 @@
 import 'package:fasttake/settings.dart';
 import 'package:flutter/material.dart';
-import 'custom_components/take_button.dart';
+import 'custom_components/take_button_text.dart';
+import 'custom_components/take_button_voice.dart';
 import 'custom_components/search.dart';
 import 'custom_components/take.dart';
 import 'package:flutter/widgets.dart';
@@ -35,7 +36,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -68,8 +68,6 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -79,12 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      
-       body: SingleChildScrollView(
+      body: SingleChildScrollView(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Container(
-          
           child: Column(
             // Column is also a layout widget. It takes a list of children and
             // arranges them vertically. By default, it sizes itself to fit its
@@ -105,10 +101,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: const EdgeInsets.only(top: 60.0),
                 child: Text(
                   'fasttake',
-                  style: TextStyle(fontFamily: 'JosefinSans', fontSize: 50, color: Colors.black, fontWeight: FontWeight.w200),
+                  style: TextStyle(
+                      fontFamily: 'JosefinSans',
+                      fontSize: 50,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w200),
                 ),
               ),
-              
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 10.0),
@@ -119,28 +118,47 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 margin:
                     const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                
                 child: TakeCard(
                   onPressed: () {},
                 ),
               ),
-              ConstrainedBox(
-                constraints: const BoxConstraints(minWidth: double.infinity),
-                child: Container(
-                  margin:
-                      const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                  child: TakeButton(
-                    onPressed: () {},
-                  ),
+              Container(
+                margin: EdgeInsets.only(top:30.0),
+                child: Text("New take", style: TextStyle(fontSize: 30),),
+              ),
+              new Container(
+                child: new Wrap(
+                  
+                  children: <Widget>[
+                    new ConstrainedBox(
+                      constraints:
+                          const BoxConstraints(minWidth: double.infinity),
+                      child: Container(
+                        margin: const EdgeInsets.only(
+                            left: 25.0, right: 25.0, top: 20.0),
+                        child: TakeButtonText(
+                          onPressed: () {},
+                        ),
+                      ),
+                    ),
+                    new ConstrainedBox(
+                      constraints:
+                          const BoxConstraints(minWidth: double.infinity),
+                      child: Container(
+                        margin: const EdgeInsets.only(
+                            left: 25.0, right: 25.0, top: 20.0),
+                        child: TakeButtonVoice(
+                          onPressed: () {},
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
           ),
-          
         ),
-        
       ),
-      
-  );
+    );
   }
 }
