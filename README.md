@@ -8,7 +8,7 @@ An app to take notes of those that come up on your mind without waiting. Written
     - [ ] Finish pages and design
         - [ ] Home Page
         - [ ] Settings Page
-        - [ ] Bug report & feedback Page (inside settings page)
+        - [ ] Feedback Page (inside settings page)
         - [ ] About Page (inside settings page)
         - [ ] New Take Page
     - [ ] Remove Material typed widgets
