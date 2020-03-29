@@ -11,8 +11,6 @@ class SettingsButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return FlatButton(
       color: Colors.grey[300],
-      highlightColor: Colors.transparent,
-      splashColor: Colors.transparent,
       shape: RoundedRectangleBorder(
           side: BorderSide(
               color: Colors.grey[800], width: 1, style: BorderStyle.solid),

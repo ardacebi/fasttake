@@ -33,6 +33,13 @@ class TakeCard extends StatelessWidget {
               ButtonBar(
                 children: <Widget>[
                   PopupMenuButton<WhyFarther>(
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                            color: Colors.grey[500],
+                            width: 1,
+                            style: BorderStyle.solid),
+                        borderRadius: BorderRadius.circular(10)),
                     tooltip: "More options",
                     onSelected: (WhyFarther result) {},
                     itemBuilder: (BuildContext context) =>
