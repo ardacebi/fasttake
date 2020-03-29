@@ -4,13 +4,11 @@ An app to take notes of those that come up on your mind without waiting. Written
 
 <img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/commit-activity/m/fasttake/fasttake?style=flat-square"></img>
+<img src="https://img.shields.io/github/issues/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/contributors/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/v/release/fasttake/fasttake?label=latest%20stable%20release&style=flat-square"></img>
 <img src="https://img.shields.io/github/v/release/fasttake/fasttake?include_prereleases&label=latest%20pre-release&style=flat-square"></img>
 <img src="https://img.shields.io/github/license/fasttake/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/issues/fasttake/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
-<img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/repo-size/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square"></img>
 
