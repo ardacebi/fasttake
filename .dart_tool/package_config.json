@@ -50,12 +50,6 @@
       "languageVersion": "2.1"
     },
     {
-      "name": "cupertino_icons",
-      "rootUri": "file:///Users/ardacebi/development/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
       "name": "flutter",
       "rootUri": "file:///Users/ardacebi/development/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -68,16 +62,16 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "flutter_sfsymbols",
-      "rootUri": "file:///Users/ardacebi/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_sfsymbols-1.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
       "name": "flutter_test",
       "rootUri": "file:///Users/ardacebi/development/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.2"
+    },
+    {
+      "name": "flutter_vector_icons",
+      "rootUri": "file:///Users/ardacebi/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_vector_icons-0.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "image",
@@ -206,7 +200,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-03-29T19:05:40.390626Z",
+  "generated": "2020-03-29T20:37:30.824555Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }
