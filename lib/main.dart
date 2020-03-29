@@ -110,26 +110,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
-                  border: Border(
-                    left: BorderSide(
-                      color: Colors.grey,
-                      width: 1.0,
-                    ),
-                    top: BorderSide(
-                      color: Colors.grey,
-                      width: 1.0,
-                    ),
-                    right: BorderSide(
-                      color: Colors.grey,
-                      width: 1.0,
-                    ),
-                    bottom: BorderSide(
-                      color: Colors.grey,
-                      width: 1.0,
-                    ),
-                  ),
-                ),
                 child: Column(
                   children: <Widget>[
                     Container(
@@ -157,28 +137,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               new Container(
-                child: new Column(
+                margin:
+                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
+                child: new Row(
                   children: <Widget>[
-                    new ConstrainedBox(
-                      constraints:
-                          const BoxConstraints(minWidth: double.infinity),
-                      child: Container(
-                        margin: const EdgeInsets.only(
-                            left: 25.0, right: 25.0, top: 20.0),
-                        child: TakeButtonText(
-                          onPressed: () {},
-                        ),
+                    Expanded(
+                      child: TakeButtonText(
+                        onPressed: () {},
                       ),
                     ),
-                    new ConstrainedBox(
-                      constraints:
-                          const BoxConstraints(minWidth: double.infinity),
-                      child: Container(
-                        margin: const EdgeInsets.only(
-                            left: 25.0, right: 25.0, top: 20.0),
-                        child: TakeButtonVoice(
-                          onPressed: () {},
-                        ),
+                    Expanded(
+                      child: TakeButtonVoice(
+                        onPressed: () {},
                       ),
                     ),
                   ],
