@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 InputDecoration customSearch = InputDecoration(
-  hintText: 'Search takes',
+  hintText: 'search takes',
   border: OutlineInputBorder(
     borderRadius: BorderRadius.circular(50.0),
   ),

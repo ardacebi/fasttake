@@ -95,7 +95,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(
                       fontFamily: 'JosefinSans',
                       fontSize: 50,
-                      color: Colors.black,
                       fontWeight: FontWeight.w200),
                 ),
               ),
@@ -123,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: EdgeInsets.only(top: 30.0),
                 child: Text(
                   "new take",
-                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.w300),
+                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.w300, fontFamily: 'JosefinSans',),
                 ),
               ),
               new Container(

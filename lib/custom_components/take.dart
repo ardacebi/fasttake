@@ -25,10 +25,10 @@ class TakeCard extends StatelessWidget {
             children: <Widget>[
               const ListTile(
                 title: Text(
-                  'This is an instant take',
+                  'This is an instant take', style: TextStyle(fontFamily: 'JosefinSans'),
                 ),
                 subtitle: Text(
-                    'The base of my idea is to create an application that...'),
+                    'The base of my idea is to create an application that...', style: TextStyle(fontFamily: 'JosefinSans')),
               ),
               ButtonBar(
                 children: <Widget>[
@@ -46,11 +46,11 @@ class TakeCard extends StatelessWidget {
                         <PopupMenuEntry<WhyFarther>>[
                       const PopupMenuItem<WhyFarther>(
                         value: WhyFarther.delete,
-                        child: Text('Delete'),
+                        child: Text('delete', style: TextStyle(fontFamily: 'JosefinSans')),
                       ),
                       const PopupMenuItem<WhyFarther>(
                         value: WhyFarther.pin,
-                        child: Text('Pin'),
+                        child: Text('pin', style: TextStyle(fontFamily: 'JosefinSans')),
                       ),
                     ],
                   )
