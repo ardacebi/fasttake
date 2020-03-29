@@ -3,7 +3,9 @@
 An app to take notes of those that come up on your mind without waiting. Written with Flutter and Dart.
 
 ## Features
-Coming soon
+The main idea and the function of the app is to documentate the ideas (and things) that come up on your mind instantly without forgetting them.
+
+- "Take" ideas and notes
 
 ## How to build and contribute
 
