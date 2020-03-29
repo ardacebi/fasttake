@@ -22,19 +22,11 @@ class TakeButtonText extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Container(
-              margin: const EdgeInsets.only(bottom: 12.0),
-              
-            ),
-            SizedBox(
-              width: 10.0,
-            ),
-            const Icon(SFSymbols.text_badge_plus, size:70.0),
+            const Icon(SFSymbols.text_badge_plus, size: 70.0),
           ],
         ),
       ),
       onPressed: onPressed,
-      
     );
   }
 }
