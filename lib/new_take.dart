@@ -3,12 +3,12 @@ import 'dart:async';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
-class NewTakePage extends StatefulWidget {
+class NewTakeRoute extends StatefulWidget {
   @override
-  _NewTakePageState createState() => _NewTakePageState();
+  _NewTakeRouteState createState() => _NewTakeRouteState();
 }
 
-class _NewTakePageState extends State<NewTakePage> {
+class _NewTakeRouteState extends State<NewTakeRoute> {
   @override
   Widget build(BuildContext context) {
     return Center(
