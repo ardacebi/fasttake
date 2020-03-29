@@ -21,6 +21,8 @@ class MyApp extends StatelessWidget {
       title: 'fasttake',
       darkTheme: ThemeData.dark(),
       theme: ThemeData(
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -57,7 +59,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -134,10 +135,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: TakeButtonText(
                         onPressed: () {
                           Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => NewTakeRoute()),
-                      );
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => NewTakeRoute()),
+                          );
                         },
                       ),
                     ),
