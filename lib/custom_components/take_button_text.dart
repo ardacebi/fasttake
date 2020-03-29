@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
 
-class TakeButton extends StatelessWidget {
-  TakeButton({@required this.onPressed});
+class TakeButtonText extends StatelessWidget {
+  TakeButtonText({@required this.onPressed});
   final GestureTapCallback onPressed;
 
   @override
@@ -29,15 +29,7 @@ class TakeButton extends StatelessWidget {
             SizedBox(
               width: 10.0,
             ),
-            Text(
-              "New take",
-              maxLines: 1,
-              style: TextStyle(
-                  fontFamily: 'JosefinSans',
-                  fontSize: 40,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w300),
-            ),
+            const Icon(SFSymbols.text_badge_plus, size:70.0),
           ],
         ),
       ),
