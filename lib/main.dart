@@ -2,6 +2,7 @@ import 'package:fasttake/settings.dart';
 import 'package:flutter/material.dart';
 import 'custom_components/take_button_text.dart';
 import 'custom_components/take_button_voice.dart';
+import 'custom_components/settings_button.dart';
 import 'custom_components/search.dart';
 import 'custom_components/take.dart';
 import 'package:flutter/widgets.dart';
@@ -153,9 +154,23 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                   ],
+                  
                 ),
               ),
+              new ConstrainedBox(
+                      constraints:
+                          const BoxConstraints(minWidth: double.infinity),
+                      child: Container(
+                        margin: const EdgeInsets.only(
+                            left: 25.0, right: 25.0, top: 20.0),
+                        child: SettingsButton(
+                          onPressed: () {},
+                        ),
+                      ),
+                    ),
             ],
+
+            
           ),
         ),
       ),
