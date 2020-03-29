@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 enum WhyFarther { delete, pin }
 
-int _selection = 0;
-
 class TakeCard extends StatelessWidget {
   TakeCard({@required this.onPressed});
   final GestureTapCallback onPressed;
