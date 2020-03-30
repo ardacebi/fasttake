@@ -14,6 +14,7 @@ class _NewTakeRouteState extends State<NewTakeRoute> {
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
+        centerTitle: true,
         title: new Text('new take',
             style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0)),
       ),

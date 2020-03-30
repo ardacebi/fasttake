@@ -14,6 +14,7 @@ class _FeedbackRouteState extends State<FeedbackRoute> {
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
+        centerTitle: true,
         title: new Text('feedback',
             style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0)),
       ),
