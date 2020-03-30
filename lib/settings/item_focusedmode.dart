@@ -8,6 +8,8 @@ class SettingsItemFocusedMode extends StatefulWidget {
 }
 
 class _SettingsItemFocusedModeState extends State<SettingsItemFocusedMode> {
+  bool isSwitched = false;
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -16,6 +18,19 @@ class _SettingsItemFocusedModeState extends State<SettingsItemFocusedMode> {
             icon: new Icon(SimpleLineIcons.arrow_left, color: Colors.black),
             onPressed: () => Navigator.of(context).pop(),
           ),
+           actions: <Widget>[
+          Switch(
+            value: isSwitched,
+            onChanged: (value) {
+              setState(() {
+                isSwitched = value;
+                print(isSwitched);
+              });
+            },
+            activeTrackColor: Colors.grey,
+            activeColor: Colors.grey[900],
+          ),
+        ],
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
