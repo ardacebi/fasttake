@@ -1,8 +1,26 @@
 import 'package:flutter/material.dart';
 
-enum WhyFarther { delete, pin }
-
 class TakeCard extends StatelessWidget {
+  createAlertDialog(BuildContext context) {
+    return showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text("Delete take?"),
+            actions: <Widget>[
+              FlatButton(
+                child: const Text('Cancel'),
+                onPressed: () {},
+              ),
+              FlatButton(
+                child: const Text('Delete'),
+                onPressed: () {},
+              ),
+            ],
+          );
+        });
+  }
+
   TakeCard({@required this.onPressed});
   final GestureTapCallback onPressed;
 
@@ -25,35 +43,33 @@ class TakeCard extends StatelessWidget {
             children: <Widget>[
               const ListTile(
                 title: Text(
-                  'This is an instant take', style: TextStyle(fontFamily: 'JosefinSans'),
+                  'This is an instant take',
+                  style: TextStyle(fontFamily: 'JosefinSans'),
                 ),
                 subtitle: Text(
-                    'The base of my idea is to create an application that...', style: TextStyle(fontFamily: 'JosefinSans')),
+                    'The base of my idea is to create an application that...',
+                    style: TextStyle(fontFamily: 'JosefinSans')),
               ),
               ButtonBar(
                 children: <Widget>[
-                  PopupMenuButton<WhyFarther>(
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                        side: BorderSide(
-                            color: Colors.grey[500],
-                            width: 1,
-                            style: BorderStyle.solid),
-                        borderRadius: BorderRadius.circular(10)),
-                    tooltip: "More options",
-                    onSelected: (WhyFarther result) {},
-                    itemBuilder: (BuildContext context) =>
-                        <PopupMenuEntry<WhyFarther>>[
-                      const PopupMenuItem<WhyFarther>(
-                        value: WhyFarther.delete,
-                        child: Text('delete', style: TextStyle(fontFamily: 'JosefinSans')),
-                      ),
-                      const PopupMenuItem<WhyFarther>(
-                        value: WhyFarther.pin,
-                        child: Text('pin', style: TextStyle(fontFamily: 'JosefinSans')),
-                      ),
-                    ],
-                  )
+                  PopupMenuButton<String>(
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                              color: Colors.grey[500],
+                              width: 1,
+                              style: BorderStyle.solid),
+                          borderRadius: BorderRadius.circular(10)),
+                      tooltip: "More options",
+                      onSelected: choiceAction,
+                      itemBuilder: (BuildContext context) {
+                        return Constants.choices.map((String choice) {
+                          return PopupMenuItem<String>(
+                            value: choice,
+                            child: Text(choice),
+                          );
+                        }).toList();
+                      }),
                 ],
               ),
             ],
@@ -62,4 +78,22 @@ class TakeCard extends StatelessWidget {
       ),
     );
   }
+}
+
+class Constants {
+  static const String Delete = 'delete';
+  static const String Pin = 'pin';
+
+  static const List<String> choices = <String>[
+    Delete,
+    Pin,
+  ];
+}
+
+void choiceAction(String choice) {
+  if (choice == Constants.Delete) {
+    // createAlertDialog(context);
+  }
+
+  if (choice == Constants.Pin) {}
 }
