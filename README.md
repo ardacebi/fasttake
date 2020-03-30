@@ -35,7 +35,7 @@ An app to take notes of those that come up on your mind without waiting. Written
 ### Goal and current design
 | Drawn prototype | Current design (29 March 2020) |
 |:-:|:-:|
-| ![First](/readme_assets/prototype.png) | ![Sec](/readme_assets/29_march.png) |
+| ![First](/readme_assets/prototype.png) | ![Sec](/readme_assets/30_march.png) |
 
 ### Used Versioning (Semantic Versioning)
 fasttake uses Semantic Versioning for it's releases.
