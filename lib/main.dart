@@ -7,10 +7,10 @@ import 'custom_components/settings_button.dart';
 import 'custom_components/search.dart';
 import 'custom_components/take.dart';
 import 'package:flutter/widgets.dart';
+import 'package:page_transition/page_transition.dart';
 import 'dart:async';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
-
 
 void main() => runApp(MyApp());
 
@@ -123,7 +123,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: EdgeInsets.only(top: 30.0),
                 child: Text(
                   "new take",
-                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.w300, fontFamily: 'JosefinSans',),
+                  style: TextStyle(
+                    fontSize: 35,
+                    fontWeight: FontWeight.w300,
+                    fontFamily: 'JosefinSans',
+                  ),
                 ),
               ),
               new Container(
@@ -135,10 +139,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: TakeButtonText(
                         onPressed: () {
                           Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => NewTakeRoute()),
-                          );
+                          context,
+                          PageTransition(
+                              type: PageTransitionType.rightToLeftWithFade,
+                              child: NewTakeRoute()));
                         },
                       ),
                     ),
@@ -158,10 +162,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: SettingsButton(
                     onPressed: () {
                       Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => SettingsRoute()),
-                      );
+                          context,
+                          PageTransition(
+                              type: PageTransitionType.rightToLeftWithFade,
+                              child: SettingsRoute()));
                     },
                   ),
                 ),
