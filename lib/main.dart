@@ -1,3 +1,4 @@
+import 'package:fasttake/editor.dart';
 import 'package:fasttake/settings/settings.dart';
 import 'package:fasttake/new_take.dart';
 import 'package:flutter/material.dart';
@@ -142,7 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           context,
                           PageTransition(
                               type: PageTransitionType.rightToLeftWithFade,
-                              child: NewTakeRoute()));
+                              child: EditorRoute()));
                         },
                       ),
                     ),

@@ -26,6 +26,7 @@ dependencies:
   flutter_vector_icons: ^0.2.1
   page_transition: ^1.1.5
   package_info: ^0.4.0+16
+  zefyr: ^0.10.0
 
 dev_dependencies:
   flutter_test:
