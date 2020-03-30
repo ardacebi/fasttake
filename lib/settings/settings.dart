@@ -119,8 +119,6 @@ class _SettingsRouteState extends State<SettingsRoute> {
           Expanded(
             child: Align(
               alignment: FractionalOffset.bottomCenter,
-              child: MaterialButton(
-                onPressed: () => {},
                 child: Padding(
                   padding: EdgeInsets.only(bottom:30.0),
                   child: Text(
@@ -133,7 +131,6 @@ class _SettingsRouteState extends State<SettingsRoute> {
                 ),
               ),
             ),
-          ),
         ],
       ),
     );
