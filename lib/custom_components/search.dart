@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+
 
 InputDecoration customSearch = InputDecoration(
   hintText: 'search takes',
@@ -8,7 +10,7 @@ InputDecoration customSearch = InputDecoration(
   fillColor: Colors.white,
   filled: true,
   prefixIcon: Icon(
-    Icons.search,
+    SimpleLineIcons.magnifier,
     color: Colors.black,
   ),
 );
