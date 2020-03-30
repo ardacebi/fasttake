@@ -8,6 +8,8 @@ class TakeDetailsRoute extends StatefulWidget {
 }
 
 class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
+  bool isSwitched = false;
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -31,7 +33,7 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
               Container(
                 margin: const EdgeInsets.only(bottom: 20.0),
                 child: TextField(
-                 textCapitalization: TextCapitalization.sentences,
+                  textCapitalization: TextCapitalization.sentences,
                   decoration: InputDecoration(
                     prefixIcon: Icon(SimpleLineIcons.info),
                     border: OutlineInputBorder(),
@@ -49,16 +51,31 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(top: 10.0, bottom: 5.0),
-                child: Text(
-                  "reminders",
-                  style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w300,
-                    fontFamily: 'JosefinSans',
+              Row(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: 10.0, bottom: 5.0),
+                    child: Text(
+                      "reminders",
+                      style: TextStyle(
+                        fontSize: 35,
+                        fontWeight: FontWeight.w300,
+                        fontFamily: 'JosefinSans',
+                      ),
+                    ),
                   ),
-                ),
+                  Switch(
+                    value: isSwitched,
+                    onChanged: (value) {
+                      setState(() {
+                        isSwitched = value;
+                        print(isSwitched);
+                      });
+                    },
+                    activeTrackColor: Colors.grey,
+                    activeColor: Colors.grey[900],
+                  ),
+                ],
               ),
               Row(
                 children: <Widget>[
@@ -84,20 +101,22 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                   ),
                   Expanded(
                     child: Container(
-      margin: const EdgeInsets.only(left: 5.0),
-                    child: OutlineButton.icon(
-                      onPressed: () {
-                        DatePicker.showTimePicker(context,
-                            showTitleActions: true, onChanged: (date) {
-                          print('change $date');
-                        }, onConfirm: (date) {
-                          print('confirm $date');
-                        }, currentTime: DateTime.now(), locale: LocaleType.en);
-                      },
-                      label: Text("Set time"),
-                      icon: Icon(SimpleLineIcons.clock),
+                      margin: const EdgeInsets.only(left: 5.0),
+                      child: OutlineButton.icon(
+                        onPressed: () {
+                          DatePicker.showTimePicker(context,
+                              showTitleActions: true, onChanged: (date) {
+                            print('change $date');
+                          }, onConfirm: (date) {
+                            print('confirm $date');
+                          },
+                              currentTime: DateTime.now(),
+                              locale: LocaleType.en);
+                        },
+                        label: Text("Set time"),
+                        icon: Icon(SimpleLineIcons.clock),
+                      ),
                     ),
-                  ),
                   ),
                 ],
               ),
