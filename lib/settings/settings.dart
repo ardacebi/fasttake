@@ -1,4 +1,5 @@
 import 'package:fasttake/settings/item_focusedmode.dart';
+import 'package:fasttake/settings/item_security.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:page_transition/page_transition.dart';
@@ -46,7 +47,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.bulb),
-            title: Text('focused mode',
+            title: Text('focus mode',
                 style: TextStyle(fontFamily: 'JosefinSans')),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {Navigator.push(
@@ -54,6 +55,17 @@ class _SettingsRouteState extends State<SettingsRoute> {
                           PageTransition(
                               type: PageTransitionType.rightToLeftWithFade,
                               child: SettingsItemFocusedMode()));},
+          ),
+          ListTile(
+            leading: Icon(SimpleLineIcons.shield),
+            title: Text('security',
+                style: TextStyle(fontFamily: 'JosefinSans')),
+            trailing: Icon(SimpleLineIcons.arrow_right),
+            onTap: () {Navigator.push(
+                          context,
+                          PageTransition(
+                              type: PageTransitionType.rightToLeftWithFade,
+                              child: SettingsItemSecurity()));},
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.support),
