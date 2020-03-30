@@ -22,7 +22,7 @@ class TakeButtonVoice extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: const <Widget>[
-            const Icon(SimpleLineIcons.microphone, size: 70.0),
+            const Icon(SimpleLineIcons.microphone, size: 50.0),
            
           ],
         ),
