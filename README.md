@@ -1,6 +1,6 @@
 <img src="/readme_assets/fasttake_repo.png" alt="fasttake logo" align="middle">
 
-An app to take notes of those that come up on your mind without waiting. Written in Flutter and Dart.
+An app to take notes of those that come up on your mind without waiting. Written in Dart using Flutter.
 
 <img src="https://img.shields.io/travis/com/fasttake/fasttake?style=flat-square"></img>
 <img src="https://img.shields.io/github/issues/fasttake/fasttake?style=flat-square"></img>
