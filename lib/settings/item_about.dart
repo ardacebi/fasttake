@@ -72,7 +72,7 @@ class _SettingsItemAboutState extends State<SettingsItemAbout> {
         children: <Widget>[
           _infoTile('app version', _packageInfo.version),
           _infoTile('build number', _packageInfo.buildNumber),
-          _infoTile('channel', 'stable'),
+          _infoTile('channel', 'beta'),
         ],
       ),
     );
