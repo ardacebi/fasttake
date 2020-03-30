@@ -37,6 +37,8 @@ An app to take notes of those that come up on your mind without waiting. Written
 |:-:|:-:|
 | ![First](/readme_assets/prototype.png) | ![Sec](/readme_assets/30_march.png) |
 
+Important: Screenshots above are updated sometimes daily and sometimes weekly and may subject to change when you build the app on your computer. Major and minor changes are done every day and every hour.
+
 ### Used Versioning (Semantic Versioning)
 fasttake uses Semantic Versioning for it's releases.
 
