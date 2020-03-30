@@ -37,18 +37,15 @@ class TakeCard extends StatelessWidget {
       child: Card(
         elevation: 0,
         child: Padding(
-          padding: EdgeInsets.only(top: 20.0),
+          padding: EdgeInsets.only(top: 10.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               const ListTile(
                 title: Text(
-                  'This is an instant take',
+                  'This mind-blowing idea just came up to my mind while showering: an app that...',
                   style: TextStyle(fontFamily: 'JosefinSans'),
                 ),
-                subtitle: Text(
-                    'The base of my idea is to create an application that...',
-                    style: TextStyle(fontFamily: 'JosefinSans')),
               ),
               ButtonBar(
                 children: <Widget>[
