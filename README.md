@@ -17,10 +17,10 @@ An app to take notes of those that come up on your mind without waiting. Written
   - [ ] Design
     - [ ] Finish pages and design
         - [x] Home route
-        - [x] Settings route
+        - [ ] Settings route
         - [ ] Feedback route (inside settings route)
-        ~~- [x] About route (inside settings route)~~ Removed route and implemented in settings page (bottom)
-        - [] New Take & details route
+        - [x] ~~About route (inside settings route)~~ Removed route and implemented in settings page (bottom)
+        - [ ] New Take & details route
     - [x] Remove Material type-d widgets
     - [ ] Create mutual area that holds search bar and take cards (separate from new take button)
   - [ ] Development
