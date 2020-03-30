@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class SettingsItemFocusedMode extends StatefulWidget {
   @override
@@ -11,6 +12,10 @@ class _SettingsItemFocusedModeState extends State<SettingsItemFocusedMode> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
+        leading: new IconButton(
+            icon: new Icon(SimpleLineIcons.arrow_left, color: Colors.black),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
