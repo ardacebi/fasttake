@@ -1,4 +1,4 @@
-import 'package:fasttake/settings.dart';
+import 'package:fasttake/settings/settings.dart';
 import 'package:fasttake/new_take.dart';
 import 'package:flutter/material.dart';
 import 'custom_components/take_button_text.dart';
