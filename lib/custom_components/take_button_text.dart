@@ -22,7 +22,7 @@ class TakeButtonText extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: const <Widget>[
-            const Icon(SimpleLineIcons.note, size: 70.0),
+            const Icon(SimpleLineIcons.note, size: 50.0),
            
           ],
         ),
