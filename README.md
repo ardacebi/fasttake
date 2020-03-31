@@ -41,7 +41,7 @@ An app to take notes of those that come up on your mind without waiting. Written
 
  Home | Take Editor | Take Details | Settings |
  |:-:|:-:|:-:|:-:|
- | [<img src="readme_assets/home_31march.png" width="192"/>](image.png) | [<img src="readme_assets/editor_31march.png" width="192"/>](image.png) | [<img src="readme_assets/takedetails_31march.png" width="192"/>](image.png) | [<img src="readme_assets/settings_31march.png" width="192"/>](image.png) |
+ | [<img src="readme_assets/home_31march.png" width="195"/>](image.png) | [<img src="readme_assets/editor_31march.png" width="195"/>](image.png) | [<img src="readme_assets/takedetails_31march.png" width="195"/>](image.png) | [<img src="readme_assets/settings_31march.png" width="195"/>](image.png) |
  
 Important: Screenshots above are updated mostly every day and may subject to change when you build the app on your computer. Major and minor changes are done every day and every hour.
 
