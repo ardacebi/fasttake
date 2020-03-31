@@ -38,7 +38,7 @@ class _SettingsItemFocusedModeState extends State<SettingsItemFocusedMode> {
         title: Column(
           children: [
             Text(
-              "focused mode", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0),
+              "focus mode", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0),
             ),
             GestureDetector(
               child: Text('settings', style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20.0)),
@@ -51,7 +51,7 @@ class _SettingsItemFocusedModeState extends State<SettingsItemFocusedMode> {
         children:<Widget>[
           Padding(
             padding: EdgeInsets.only(top:20.0, left:20.0, right:20.0),
-            child: Text("focused mode disables extra clutter features like pinning and tags to give you a more focused space on your ideas and takes.")
+            child: Text("focus mode disables extra clutter features like pinning and tags to give you a more focused space on your ideas and takes.")
           ),
           
         ],
