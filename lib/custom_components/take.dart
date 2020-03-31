@@ -79,11 +79,11 @@ class TakeCard extends StatelessWidget {
 
 class Constants {
   static const String Delete = 'delete';
-  static const String Pin = 'pin';
+//static const String Pin = 'pin';
 
   static const List<String> choices = <String>[
     Delete,
-    
+//  Pin,
   ];
 }
 
