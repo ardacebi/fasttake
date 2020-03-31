@@ -51,7 +51,78 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
           ],
         ),
       ),
-      body: SingleChildScrollView(),
+      body: new Column(
+        children: <Widget>[
+          ListTile(
+            leading: Icon(SimpleLineIcons.clock),
+            title: Text('take reminders',
+                style: TextStyle(fontFamily: 'JosefinSans')),
+            trailing: Switch(
+            value: isSwitched,
+            onChanged: (value) {
+              setState(() {
+                isSwitched = value;
+                print(isSwitched);
+              });
+            },
+            activeTrackColor: Colors.grey,
+            activeColor: Colors.grey[900],
+          ),
+            onTap: () {},
+          ),
+         ListTile(
+            leading: Icon(SimpleLineIcons.bulb),
+            title: Text('regular reminding of your ideas',
+                style: TextStyle(fontFamily: 'JosefinSans')),
+            trailing: Switch(
+            value: isSwitched,
+            onChanged: (value) {
+              setState(() {
+                isSwitched = value;
+                print(isSwitched);
+              });
+            },
+            activeTrackColor: Colors.grey,
+            activeColor: Colors.grey[900],
+          ),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(SimpleLineIcons.cloud_download),
+            title: Text('app updates',
+                style: TextStyle(fontFamily: 'JosefinSans')),
+            trailing: Switch(
+            value: isSwitched,
+            onChanged: (value) {
+              setState(() {
+                isSwitched = value;
+                print(isSwitched);
+              });
+            },
+            activeTrackColor: Colors.grey,
+            activeColor: Colors.grey[900],
+          ),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(SimpleLineIcons.paper_plane),
+            title: Text('tips & tricks',
+                style: TextStyle(fontFamily: 'JosefinSans')),
+            trailing: Switch(
+            value: isSwitched,
+            onChanged: (value) {
+              setState(() {
+                isSwitched = value;
+                print(isSwitched);
+              });
+            },
+            activeTrackColor: Colors.grey,
+            activeColor: Colors.grey[900],
+          ),
+            onTap: () {},
+          ),
+        ],
+      ),
     );
   }
 }
