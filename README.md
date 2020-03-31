@@ -26,11 +26,15 @@ An app to take notes of those that come up on your mind without waiting. Written
   - [ ] Development
     - [x] Initialize local database features
     - [ ] Take creation and deletion
-    - [ ] Take pinning
-    - [ ] Tags to organize Takes
     - [ ] Simple / focus mode to disable features such as pinning that distracts users from the main function which is take creation and deletion.
 - [ ] v1.0.1
     - [ ] Fix reported bugs via Bug report page
+- [ ] v1.1.0
+  - [ ] Development
+    - [ ] Take pinning
+- [ ] v1.2.0
+  - [ ] Development
+    - [ ] Tags to organize Takes
 
 ### Goal and current design
 | Drawn prototype | Current design (29 March 2020) |
