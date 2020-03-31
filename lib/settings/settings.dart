@@ -77,7 +77,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                       child: SettingsItemNotifications()));
             },
           ),
-          ListTile(
+        /*  ListTile(
             leading: Icon(SimpleLineIcons.bulb),
             title:
                 Text('focus mode', style: TextStyle(fontFamily: 'JosefinSans')),
@@ -89,7 +89,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                       type: PageTransitionType.rightToLeftWithFade,
                       child: SettingsItemFocusedMode()));
             },
-          ),
+          ), */
           ListTile(
             leading: Icon(SimpleLineIcons.shield),
             title:
