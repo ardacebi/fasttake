@@ -1,4 +1,4 @@
-import 'package:fasttake/settings/item_focusedmode.dart';
+import 'package:fasttake/settings/item_focusmode.dart';
 import 'package:fasttake/settings/item_security.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
