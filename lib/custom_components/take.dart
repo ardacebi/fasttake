@@ -83,7 +83,7 @@ class Constants {
 
   static const List<String> choices = <String>[
     Delete,
-    Pin,
+    
   ];
 }
 
@@ -92,5 +92,6 @@ void choiceAction(String choice) {
     // createAlertDialog(context);
   }
 
-  if (choice == Constants.Pin) {}
-}
+// if (choice == Constants.Pin) {}
+} 
+
