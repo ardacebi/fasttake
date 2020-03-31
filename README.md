@@ -14,15 +14,15 @@ An app to take notes of those that come up on your mind without waiting. Written
 
 ## Roadmap and to-do
 - [ ] v1.0.0
-  - [ ] Design
-    - [ ] Finish pages and design
+  - [x] Design
+    - [x] Finish pages and design
         - [x] Home route
         - [x] Settings route
         - [x] Feedback route (inside settings route)
         - [x] ~~About route (inside settings route)~~ Removed route and implemented in settings page (bottom)
         - [x] New Take & details route
     - [x] Remove Material type-d widgets
-    - [ ] Create mutual area that holds search bar and take cards (separate from new take button)
+    - [ ] ~~Create mutual area that holds search bar and take cards (separate from new take button)~~
   - [ ] Development
     - [x] Initialize local database features
     - [ ] Take creation and deletion
