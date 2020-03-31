@@ -37,10 +37,10 @@ An app to take notes of those that come up on your mind without waiting. Written
     - [ ] Tags to organize Takes
     - [ ] Biometric app encyription (Face ID, Touch ID / Fingerprint, Face)
 
-### Goal and current design
-| Drawn prototype | Current design (29 March 2020) |
-|:-:|:-:|
-| ![First](/readme_assets/prototype.png) | ![Sec](/readme_assets/30_march.png) |
+### Daily updated current design
+| Current design (29 March 2020) |
+|:-:|
+| ![Sec](/readme_assets/30_march.png) |
 
 Important: Screenshots above are updated sometimes daily and sometimes weekly and may subject to change when you build the app on your computer. Major and minor changes are done every day and every hour.
 
