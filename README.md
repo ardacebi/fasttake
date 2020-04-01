@@ -4,7 +4,6 @@ An app to take notes of those that come up on your mind without waiting. Written
 
 [![Travis CI Build](https://img.shields.io/travis/com/ardacebi/fasttake?style=flat-square)](https://travis-ci.com/github/ardacebi/fasttake)
 ![Issues](https://img.shields.io/github/issues/ardacebi/fasttake?style=flat-square)
-![Commit Activity](https:2//img.shields.io/github/commit-activity/m/ardacebi/fasttake?style=flat-square)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
 ![stable](https://img.shields.io/github/v/release/ardacebi/fasttake?label=latest%20stable%20release&style=flat-square)
 ![License](https://img.shields.io/github/license/ardacebi/fasttake?style=flat-square)
