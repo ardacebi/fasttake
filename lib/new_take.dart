@@ -34,21 +34,20 @@ class EditorRouteState extends State<EditorRoute> {
       appBar: AppBar(
         
         leading: new IconButton(
-          icon: new Icon(SimpleLineIcons.arrow_left, color: Colors.black),
+          icon: new Icon(SimpleLineIcons.arrow_left),
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: new Text('new take',
             style: TextStyle(
                 fontWeight: FontWeight.w300,
-                fontSize: 30.0,
-                fontFamily: 'JosefinSans')),
+                fontSize: 30.0)),
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
         centerTitle: true,
         actions: <Widget>[
         FlatButton(
-          child: Text("done", style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.w300, fontFamily: 'JosefinSans')),
+          child: Text("done", style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.w300)),
           onPressed: () {Navigator.push(
                           context,
                           PageTransition(

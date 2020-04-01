@@ -15,7 +15,7 @@ class _SettingsItemFocusedModeState extends State<SettingsItemFocusedMode> {
     return new Scaffold(
       appBar: new AppBar(
         leading: new IconButton(
-            icon: new Icon(SimpleLineIcons.arrow_left, color: Colors.black),
+            icon: new Icon(SimpleLineIcons.arrow_left),
             onPressed: () => Navigator.of(context).pop(),
           ),
            actions: <Widget>[

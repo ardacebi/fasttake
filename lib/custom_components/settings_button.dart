@@ -10,7 +10,7 @@ class SettingsButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-      color: Colors.grey[300],
+      
       shape: RoundedRectangleBorder(
           side: BorderSide(
               color: Colors.grey[800], width: 1, style: BorderStyle.solid),
@@ -27,7 +27,7 @@ class SettingsButton extends StatelessWidget {
             SizedBox(
               width: 10.0,
             ),
-            Text("settings", style: TextStyle(fontSize: 35.0, fontFamily: 'JosefinSans', fontWeight: FontWeight.w300)),
+            Text("settings", style: TextStyle(fontSize: 35.0, fontWeight: FontWeight.w300)),
           ],
         ),
       ),

@@ -20,7 +20,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'fasttake',
-      darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        primarySwatch: Colors.grey,
+        fontFamily: 'JosefinSans',
+      ),
       theme: ThemeData(
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
@@ -94,7 +100,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text(
                   'fasttake',
                   style: TextStyle(
-                      fontFamily: 'JosefinSans',
                       fontSize: 50,
                       fontWeight: FontWeight.w200),
                 ),
@@ -126,7 +131,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.w300,
-                    fontFamily: 'JosefinSans',
                   ),
                 ),
               ),
@@ -139,10 +143,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: TakeButtonText(
                         onPressed: () {
                           Navigator.push(
-                          context,
-                          PageTransition(
-                              type: PageTransitionType.rightToLeftWithFade,
-                              child: EditorRoute()));
+                              context,
+                              PageTransition(
+                                  type: PageTransitionType.rightToLeftWithFade,
+                                  child: EditorRoute()));
                         },
                       ),
                     ),
