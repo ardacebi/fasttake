@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:file_picker/file_picker.dart';
 
 class SettingsItemFeedback extends StatefulWidget {
   @override
@@ -61,6 +62,19 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
               ),
             ),
           ),
+          new Padding(
+              padding: new EdgeInsets.only(top: 0.0, bottom:15.0, left:60.0, right:60.0),
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(minWidth: double.infinity),
+                child: new OutlineButton.icon(
+                  label: Text("Upload attachments"),
+                  icon: Icon(Icons.attach_file),
+                  onPressed: () {
+                    FilePicker.getMultiFilePath();
+                  },
+                ),
+              ),
+            ),
           Padding(
             padding: EdgeInsets.only(left:20.0, right:20.0),
             child: ConstrainedBox(
