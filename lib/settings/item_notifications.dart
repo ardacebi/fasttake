@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class SettingsItemNotifications extends StatefulWidget {
   @override
@@ -39,11 +41,11 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
         title: Column(
           children: [
             Text(
-              "notifications",
+              translate('settings_notifications.title'),
               style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0),
             ),
             GestureDetector(
-              child: Text('settings',
+              child: Text(translate('settings_notifications.subtitle'),
                   style:
                       TextStyle(fontWeight: FontWeight.w300, fontSize: 20.0)),
               onTap: () {},
@@ -55,7 +57,7 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
         children: <Widget>[
           ListTile(
             leading: Icon(SimpleLineIcons.clock),
-            title: Text('take reminders',
+            title: Text(translate('settings_notifications.items.take_reminders'),
             ),
             trailing: Switch(
             value: isSwitched,
@@ -72,7 +74,7 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
           ),
          ListTile(
             leading: Icon(SimpleLineIcons.bulb),
-            title: Text('regular reminding of your ideas',
+            title: Text(translate('settings_notifications.items.regular_reminding'),
                 ),
             trailing: Switch(
             value: isSwitched,
@@ -89,7 +91,7 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.cloud_download),
-            title: Text('app updates',
+            title: Text(translate('settings_notifications.items.app_updates'),
                ),
             trailing: Switch(
             value: isSwitched,
@@ -106,7 +108,7 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.paper_plane),
-            title: Text('tips & tricks',
+            title: Text(translate('settings_notifications.items.tips_tricks'),
                ),
             trailing: Switch(
             value: isSwitched,

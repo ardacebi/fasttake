@@ -1,0 +1,89 @@
+{
+    "home": {
+        "search_bar": {
+            "label": "search takes"
+        },
+        "card": {
+            "dot_menu_delete": "delete",
+            "dot_menu_pin": "pin"
+        },
+        "new_take_area": {
+            "new_take_title": "new take"
+        },
+        "settings_button": {
+            "settings_button": "settings"
+        }
+    },
+    "new_take_text": {
+        "title": "new take"
+    },
+    "new_take_text_details": {
+        "title": "details",
+        "subject": "subject",
+        "tags": "tags",
+        "reminders": "reminders",
+        "set_date": "set date",
+        "set_time": "set time",
+        "save_take": "save take"
+    },
+    "settings": {
+        "title": "settings",
+        "items": {
+            "notifications": "notifications",
+            "security": "security",
+            "theme": "theme",
+            "language": "language",
+            "feedback": "feedback",
+            "share_with_friends": "share with friends"
+        }
+    },
+    "settings_notifications": {
+        "title": "notifications",
+        "subtitle": "settings",
+        "items": {
+            "take_reminders": "take reminders",
+            "regular_reminding": "regular reminding of your ideas",
+            "app_updates": "app updates",
+            "tips_tricks": "tips & tricks"
+        }
+    },
+    "settings_security": {
+        "title": "security",
+        "subtitle": "settings",
+        "items": {
+            "app_lock": "app lock"
+        }
+    },
+    "settings_theme": {
+        "title": "theme",
+        "subtitle": "settings",
+        "items": {
+            "auto": "auto (system)",
+            "dark": "dark",
+            "light": "light"
+        }
+    },
+    "settings_language": {
+        "subtitle": "choose a language to use fasttake with",
+        "items": {
+            "cancel": "cancel",
+            "en": "english",
+            "it": "italian",
+            "tr": "turkish"
+        }
+    },
+    "settings_feedback": {
+        "title": "feedback",
+        "subtitle": "settings",
+        "items": {
+            "description1": "from this page, you can give feedback on fasttake for us to improve the app. you can report all kinds of bugs you see on your device or even suggest features you'd like to see in fasttake.",
+            "description2": "all feedback sent from this page is anonymous and will be used to only improve the fasttake app.",
+            "your_thoughts": "your thoughts",
+            "upload_attachments": "upload attachments",
+            "send_feedback": "send feedback"
+        }
+    },
+    "settings_share_with_friends": {
+        "message": "check out fasttake, stop forgetting those awesome ideas that come up on your mind!"
+    }
+}

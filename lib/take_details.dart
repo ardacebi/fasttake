@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class TakeDetailsRoute extends StatefulWidget {
   @override
@@ -22,7 +24,7 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
         bottomOpacity: 0.0,
         elevation: 0.0,
         centerTitle: true,
-        title: new Text('details',
+        title: new Text(translate('new_take_text_details.title'),
             style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0)),
       ),
       body: SingleChildScrollView(
@@ -37,7 +39,7 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                   decoration: InputDecoration(
                     prefixIcon: Icon(SimpleLineIcons.info),
                     border: OutlineInputBorder(),
-                    labelText: 'subject',
+                    labelText: translate('new_take_text_details.subject'),
                   ),
                 ),
               ),
@@ -47,7 +49,7 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                   decoration: InputDecoration(
                     prefixIcon: Icon(SimpleLineIcons.tag),
                     border: OutlineInputBorder(),
-                    labelText: "tags",
+                    labelText: translate('new_take_text_details.tags'),
                   ),
                 ),
               ),
@@ -56,7 +58,7 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                   Container(
                     margin: EdgeInsets.only(top: 10.0, bottom: 5.0),
                     child: Text(
-                      "reminders",
+                      translate('new_take_text_details.reminders'),
                       style: TextStyle(
                         fontSize: 35,
                         fontWeight: FontWeight.w300,
@@ -94,7 +96,7 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                               currentTime: DateTime.now(),
                               locale: LocaleType.en);
                         },
-                        label: Text("Set date"),
+                        label: Text(translate('new_take_text_details.set_date')),
                         icon: Icon(SimpleLineIcons.calendar),
                       ),
                     ),
@@ -113,7 +115,7 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                               currentTime: DateTime.now(),
                               locale: LocaleType.en);
                         },
-                        label: Text("Set time"),
+                        label: Text(translate('new_take_text_details.set_time')),
                         icon: Icon(SimpleLineIcons.clock),
                       ),
                     ),
@@ -123,7 +125,7 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
               ConstrainedBox(
                 constraints: const BoxConstraints(minWidth: double.infinity),
                 child: RaisedButton(
-                  child: Text("Save take"),
+                  child: Text(translate('new_take_text_details.save_take')),
                   onPressed: () {},
                 ),
               ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class SettingsItemSecurity extends StatefulWidget {
   @override
@@ -23,11 +25,11 @@ class _SettingsItemSecurityState extends State<SettingsItemSecurity> {
         title: Column(
           children: [
             Text(
-              "security",
+              translate('settings_security.title'),
               style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0),
             ),
             GestureDetector(
-              child: Text('settings',
+              child: Text(translate('settings_security.subtitle'),
                   style:
                       TextStyle(fontWeight: FontWeight.w300, fontSize: 20.0)),
               onTap: () {},
@@ -40,7 +42,7 @@ class _SettingsItemSecurityState extends State<SettingsItemSecurity> {
           ListTile(
             leading: Icon(SimpleLineIcons.lock),
             title:
-                Text('app lock'),
+                Text(translate('settings_security.items.app_lock')),
             onTap: () {},
           ),
         ],

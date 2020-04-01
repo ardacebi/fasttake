@@ -10,6 +10,7 @@ import 'package:package_info/package_info.dart';
 import 'package:share/share.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:platform_action_sheet/platform_action_sheet.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class SettingsRoute extends StatefulWidget {
   SettingsRoute({Key key, this.title}) : super(key: key);
@@ -60,7 +61,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           bottomOpacity: 0.0,
           elevation: 0.0,
           centerTitle: true,
-          title: new Text('settings',
+          title: new Text((translate('settings.title')),
               style: TextStyle(
                 fontWeight: FontWeight.w300,
                 fontSize: 30.0,
@@ -71,7 +72,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ListTile(
             leading: Icon(SimpleLineIcons.bell),
             title: Text(
-              'notifications',
+              (translate('settings.items.notifications')),
             ),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
@@ -97,7 +98,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ), */
           ListTile(
             leading: Icon(SimpleLineIcons.shield),
-            title: Text('security'),
+            title: Text((translate('settings.items.security'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
@@ -109,7 +110,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.magic_wand),
-            title: Text('theme'),
+            title: Text((translate('settings.items.theme'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
@@ -121,7 +122,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.globe),
-            title: Text('language'),
+            title: Text((translate('settings.items.language'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               PlatformActionSheet().displaySheet(
@@ -129,19 +130,23 @@ class _SettingsRouteState extends State<SettingsRoute> {
                   title: Row(
                     children: <Widget>[],
                   ),
-                  message: Text("choose a language to use fasttake with"),
+                  message: Text(translate('settings_language.subtitle')),
                   actions: [
                     ActionSheetAction(
-                      text: "english",
-                      onPressed: () => Navigator.pop(context),
+                      text: translate('settings_language.items.en'),
+                      onPressed: () => changeLocale(context, 'en_US'),
                       hasArrow: true,
                     ),
                     ActionSheetAction(
-                      text: "turkish",
-                      onPressed: () => Navigator.pop(context),
+                      text: translate('settings_language.items.it'),
+                      onPressed: () => changeLocale(context, 'it'), 
                     ),
                     ActionSheetAction(
-                      text: "cancel",
+                      text: translate('settings_language.items.tr'),
+                      onPressed: () => changeLocale(context, 'tr'), 
+                    ),
+                    ActionSheetAction(
+                      text: translate('settings_language.items.cancel'),
                       onPressed: () => Navigator.pop(context),
                       isCancel: true,
                       defaultAction: true,
@@ -151,7 +156,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.support),
-            title: Text('feedback'),
+            title: Text((translate('settings.items.feedback'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
@@ -163,11 +168,11 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.people),
-            title: Text('share with friends'),
+            title: Text((translate('settings.items.share_with_friends'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Share.share(
-                  'check out fasttake, stop forgetting those awesome ideas that come up on your mind!');
+                  translate('settings_share_with_friends.message'));
             },
           ),
           Expanded(
