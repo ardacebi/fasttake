@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         primarySwatch: Colors.grey,
+        accentColor: Colors.grey,
         fontFamily: 'JosefinSans',
       ),
       theme: ThemeData(
