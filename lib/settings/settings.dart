@@ -8,6 +8,8 @@ import 'package:fasttake/settings/item_notifications.dart';
 import 'package:fasttake/settings/item_feedback.dart';
 import 'package:package_info/package_info.dart';
 import 'package:share/share.dart';
+import 'package:flutter_translate/flutter_translate.dart';
+import 'package:platform_action_sheet/platform_action_sheet.dart';
 
 class SettingsRoute extends StatefulWidget {
   SettingsRoute({Key key, this.title}) : super(key: key);
@@ -129,6 +131,41 @@ class _SettingsRouteState extends State<SettingsRoute> {
                   PageTransition(
                       type: PageTransitionType.rightToLeftWithFade,
                       child: SettingsItemFeedback()));
+            },
+          ),
+          ListTile(
+            leading: Icon(SimpleLineIcons.globe),
+            title:
+                Text('language'),
+            trailing: Icon(SimpleLineIcons.arrow_right),
+            onTap: () {
+              PlatformActionSheet().displaySheet(
+                  context: context,
+                  title: Row(
+                    children: <Widget>[
+                      
+                    
+                    ],
+                  ),
+                  message: Text("choose a language to use fasttake with"),
+                  actions: [
+                    ActionSheetAction(
+                      text: "english",
+                      onPressed: () => Navigator.pop(context),
+                      hasArrow: true,
+                    ),
+                    ActionSheetAction(
+                      text: "turkish",
+                      onPressed: () => Navigator.pop(context),
+                    ),
+                    ActionSheetAction(
+                      text: "cancel",
+                      onPressed: () => Navigator.pop(context),
+                      isCancel: true,
+                      defaultAction: true,
+                    )
+                  ]);
+              
             },
           ),
           ListTile(
