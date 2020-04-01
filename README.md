@@ -22,7 +22,7 @@ An app to take notes of those that come up on your mind without waiting. Written
         - [x] ~~About route (inside settings route)~~ Removed route and implemented in settings page (bottom)
         - [x] New Take & details route
     - [x] Remove Material type-d widgets
-    - [ ] Dark Mode
+    - [x] Dark Mode
     - [ ] ~~Create mutual area that holds search bar and take cards (separate from new take button)~~ CANCELED
   - [ ] Development
     - [x] Initialize local database features
