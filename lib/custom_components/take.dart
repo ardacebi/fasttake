@@ -44,7 +44,7 @@ class TakeCard extends StatelessWidget {
               const ListTile(
                 title: Text(
                   'This mind-blowing idea just came up to my mind while showering: an app that...',
-                  style: TextStyle(fontFamily: 'JosefinSans'),
+                 
                 ),
               ),
               ButtonBar(

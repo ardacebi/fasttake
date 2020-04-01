@@ -16,7 +16,7 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
     return new Scaffold(
       appBar: new AppBar(
         leading: new IconButton(
-          icon: new Icon(SimpleLineIcons.arrow_left, color: Colors.black),
+          icon: new Icon(SimpleLineIcons.arrow_left),
           onPressed: () => Navigator.of(context).pop(),
         ),
         actions: <Widget>[
@@ -56,7 +56,7 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
           ListTile(
             leading: Icon(SimpleLineIcons.clock),
             title: Text('take reminders',
-                style: TextStyle(fontFamily: 'JosefinSans')),
+            ),
             trailing: Switch(
             value: isSwitched,
             onChanged: (value) {
@@ -73,7 +73,7 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
          ListTile(
             leading: Icon(SimpleLineIcons.bulb),
             title: Text('regular reminding of your ideas',
-                style: TextStyle(fontFamily: 'JosefinSans')),
+                ),
             trailing: Switch(
             value: isSwitched,
             onChanged: (value) {
@@ -90,7 +90,7 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
           ListTile(
             leading: Icon(SimpleLineIcons.cloud_download),
             title: Text('app updates',
-                style: TextStyle(fontFamily: 'JosefinSans')),
+               ),
             trailing: Switch(
             value: isSwitched,
             onChanged: (value) {
@@ -107,7 +107,7 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
           ListTile(
             leading: Icon(SimpleLineIcons.paper_plane),
             title: Text('tips & tricks',
-                style: TextStyle(fontFamily: 'JosefinSans')),
+               ),
             trailing: Switch(
             value: isSwitched,
             onChanged: (value) {

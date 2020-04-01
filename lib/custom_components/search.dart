@@ -7,10 +7,9 @@ InputDecoration customSearch = InputDecoration(
   border: OutlineInputBorder(
     borderRadius: BorderRadius.circular(50.0),
   ),
-  fillColor: Colors.white,
+  
   filled: true,
   prefixIcon: Icon(
     SimpleLineIcons.magnifier,
-    color: Colors.black,
   ),
 );

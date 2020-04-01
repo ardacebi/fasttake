@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
-class SettingsItemSecurity extends StatefulWidget {
+class SettingsItemTheme extends StatefulWidget {
   @override
-  _SettingsItemSecurityState createState() => _SettingsItemSecurityState();
+  _SettingsItemThemeState createState() => _SettingsItemThemeState();
 }
 
-class _SettingsItemSecurityState extends State<SettingsItemSecurity> {
+class _SettingsItemThemeState extends State<SettingsItemTheme> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -23,7 +23,7 @@ class _SettingsItemSecurityState extends State<SettingsItemSecurity> {
         title: Column(
           children: [
             Text(
-              "security",
+              "theme",
               style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0),
             ),
             GestureDetector(
@@ -35,12 +35,27 @@ class _SettingsItemSecurityState extends State<SettingsItemSecurity> {
           ],
         ),
       ),
-      body: new ListView(
+      body: new Column(
         children: <Widget>[
           ListTile(
-            leading: Icon(SimpleLineIcons.lock),
-            title:
-                Text('app lock'),
+            leading: Icon(SimpleLineIcons.settings),
+            title: Text(
+              'auto (system)',
+            ),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(SimpleLineIcons.menu),
+            title: Text(
+              'dark',
+            ),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(SimpleLineIcons.menu),
+            title: Text(
+              'light',
+            ),
             onTap: () {},
           ),
         ],

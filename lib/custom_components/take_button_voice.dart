@@ -12,7 +12,7 @@ class TakeButtonVoice extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(left: 5.0),
     child: FlatButton(
-      color: Colors.grey[300],
+
       shape: RoundedRectangleBorder(
           side: BorderSide(
               color: Colors.grey[800], width: 1, style: BorderStyle.solid),
