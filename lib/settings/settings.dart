@@ -62,16 +62,17 @@ class _SettingsRouteState extends State<SettingsRoute> {
           centerTitle: true,
           title: new Text('settings',
               style: TextStyle(
-                  fontWeight: FontWeight.w300,
-                  fontSize: 30.0,
-                  )),
+                fontWeight: FontWeight.w300,
+                fontSize: 30.0,
+              )),
           actions: <Widget>[]),
       body: new Column(
         children: <Widget>[
           ListTile(
             leading: Icon(SimpleLineIcons.bell),
-            title: Text('notifications',
-               ),
+            title: Text(
+              'notifications',
+            ),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
@@ -81,7 +82,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                       child: SettingsItemNotifications()));
             },
           ),
-        /*  ListTile(
+          /*  ListTile(
             leading: Icon(SimpleLineIcons.bulb),
             title:
                 Text('focus mode'),
@@ -96,8 +97,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ), */
           ListTile(
             leading: Icon(SimpleLineIcons.shield),
-            title:
-                Text('security'),
+            title: Text('security'),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
@@ -109,8 +109,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.magic_wand),
-            title:
-                Text('theme'),
+            title: Text('theme'),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
@@ -121,31 +120,14 @@ class _SettingsRouteState extends State<SettingsRoute> {
             },
           ),
           ListTile(
-            leading: Icon(SimpleLineIcons.support),
-            title:
-                Text('feedback'),
-            trailing: Icon(SimpleLineIcons.arrow_right),
-            onTap: () {
-              Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.rightToLeftWithFade,
-                      child: SettingsItemFeedback()));
-            },
-          ),
-          ListTile(
             leading: Icon(SimpleLineIcons.globe),
-            title:
-                Text('language'),
+            title: Text('language'),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               PlatformActionSheet().displaySheet(
                   context: context,
                   title: Row(
-                    children: <Widget>[
-                      
-                    
-                    ],
+                    children: <Widget>[],
                   ),
                   message: Text("choose a language to use fasttake with"),
                   actions: [
@@ -165,29 +147,40 @@ class _SettingsRouteState extends State<SettingsRoute> {
                       defaultAction: true,
                     )
                   ]);
-              
+            },
+          ),
+          ListTile(
+            leading: Icon(SimpleLineIcons.support),
+            title: Text('feedback'),
+            trailing: Icon(SimpleLineIcons.arrow_right),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  PageTransition(
+                      type: PageTransitionType.rightToLeftWithFade,
+                      child: SettingsItemFeedback()));
             },
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.people),
-            title:
-                Text('share with friends'),
+            title: Text('share with friends'),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-             Share.share('check out fasttake, stop forgetting those awesome ideas that come up on your mind!');
+              Share.share(
+                  'check out fasttake, stop forgetting those awesome ideas that come up on your mind!');
             },
           ),
           Expanded(
             child: Align(
               alignment: FractionalOffset.bottomCenter,
-                child: Padding(
-                  padding: EdgeInsets.only(bottom:30.0),
-                  child: Text(
-                    _packageInfo.version,
-                    style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.w300,
+              child: Padding(
+                padding: EdgeInsets.only(bottom: 30.0),
+                child: Text(
+                  _packageInfo.version,
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w300,
                   ),
                 ),
               ),
