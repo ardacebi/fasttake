@@ -35,7 +35,7 @@ An app to take notes of those that come up on your mind without waiting. Written
 - [ ] v1.2.0
   - [ ] Development
     - [ ] Tags to organize Takes
-    - [ ] Biometric app encyription (Face ID, Touch ID / Fingerprint, Face)
+    - [ ] Biometric app encryption (Face ID, Touch ID / Fingerprint, Face)
 
 ### Current status
 
