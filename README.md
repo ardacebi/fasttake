@@ -3,10 +3,10 @@
 An app to take notes of those that come up on your mind without waiting. Written in Dart using Flutter.
 
 [![Travis CI Build](https://img.shields.io/travis/com/ardacebi/fasttake?style=flat-square)](https://travis-ci.com/github/ardacebi/fasttake)
+![License](https://img.shields.io/github/license/ardacebi/fasttake?style=flat-square)
 ![Issues](https://img.shields.io/github/issues/ardacebi/fasttake?style=flat-square)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
 ![stable](https://img.shields.io/github/v/release/ardacebi/fasttake?label=stable&style=flat-square)
-![License](https://img.shields.io/github/license/ardacebi/fasttake?style=flat-square)
 
 ## Roadmap and to-do
 - [ ] v1.0.0
