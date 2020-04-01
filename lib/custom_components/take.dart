@@ -45,7 +45,7 @@ class TakeCard extends StatelessWidget {
             children: <Widget>[
               const ListTile(
                 title: Text(
-                  'This mind-blowing idea just came up to my mind while showering: an app that...',
+                  '',
                  
                 ),
               ),
