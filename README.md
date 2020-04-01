@@ -17,12 +17,19 @@ An app to take notes of those that come up on your mind without waiting. Written
         - [x] Feedback route (inside settings route)
         - [x] ~~About route (inside settings route)~~ Removed route and implemented in settings page (bottom)
         - [x] New Take & details route
-    - [x] Remove Material type-d widgets
+    - [ ] Convert all Material widgets to custom designed widgets
     - [x] Dark Mode
     - [ ] ~~Create mutual area that holds search bar and take cards (separate from new take button)~~ CANCELED
   - [ ] Development
     - [x] Initialize local database features
     - [ ] Take creation and deletion
+  - [ ] Localization
+    - [x] Function and settings
+    - [x] English
+    - [ ] Italian (Under translation)
+    - [ ] Spanish
+    - [ ] German
+    - [ ] Turkish (Under translation)
 - [ ] v1.0.1
     - [ ] Fix reported bugs via Bug report page
 - [ ] v1.1.0
