@@ -7,6 +7,7 @@ import 'package:page_transition/page_transition.dart';
 import 'package:fasttake/settings/item_notifications.dart';
 import 'package:fasttake/settings/item_feedback.dart';
 import 'package:package_info/package_info.dart';
+import 'package:share/share.dart';
 
 class SettingsRoute extends StatefulWidget {
   SettingsRoute({Key key, this.title}) : super(key: key);
@@ -128,6 +129,15 @@ class _SettingsRouteState extends State<SettingsRoute> {
                   PageTransition(
                       type: PageTransitionType.rightToLeftWithFade,
                       child: SettingsItemFeedback()));
+            },
+          ),
+          ListTile(
+            leading: Icon(SimpleLineIcons.people),
+            title:
+                Text('share with friends'),
+            trailing: Icon(SimpleLineIcons.arrow_right),
+            onTap: () {
+             Share.share('check out fasttake, stop forgetting those awesome ideas that come up on your mind!');
             },
           ),
           Expanded(
