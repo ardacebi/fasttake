@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'dart:ui';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class SettingsButton extends StatelessWidget {
   SettingsButton({@required this.onPressed});
@@ -27,7 +29,7 @@ class SettingsButton extends StatelessWidget {
             SizedBox(
               width: 10.0,
             ),
-            Text("settings", style: TextStyle(fontSize: 35.0, fontWeight: FontWeight.w300)),
+            Text(translate('home.settings_button.settings_button'), style: TextStyle(fontSize: 35.0, fontWeight: FontWeight.w300)),
           ],
         ),
       ),

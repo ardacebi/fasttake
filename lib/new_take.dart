@@ -4,6 +4,8 @@ import 'package:quill_delta/quill_delta.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:zefyr/zefyr.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class EditorRoute extends StatefulWidget {
   @override
@@ -37,7 +39,7 @@ class EditorRouteState extends State<EditorRoute> {
           icon: new Icon(SimpleLineIcons.arrow_left),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: new Text('new take',
+        title: new Text(translate('new_take_text.title'),
             style: TextStyle(
                 fontWeight: FontWeight.w300,
                 fontSize: 30.0)),
@@ -47,7 +49,7 @@ class EditorRouteState extends State<EditorRoute> {
         centerTitle: true,
         actions: <Widget>[
         FlatButton(
-          child: Text("done", style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.w300)),
+          child: Text(translate('new_take_text.done'), style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.w300)),
           onPressed: () {Navigator.push(
                           context,
                           PageTransition(

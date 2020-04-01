@@ -11,31 +11,50 @@ import 'package:page_transition/page_transition.dart';
 import 'dart:async';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:flutter_translate/flutter_translate.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  var delegate = await LocalizationDelegate.create(
+      fallbackLocale: 'en_US', supportedLocales: ['en_US', 'tr', 'it']);
+
+  runApp(LocalizedApp(delegate, MyApp()));
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'fasttake',
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-        splashColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        primarySwatch: Colors.grey,
-        accentColor: Colors.grey,
-        cardColor: Colors.grey[850],
-        fontFamily: 'JosefinSans',
+    var localizationDelegate = LocalizedApp.of(context).delegate;
+
+    return LocalizationProvider(
+      state: LocalizationProvider.of(context).state,
+      child: MaterialApp(
+        title: 'fasttake',
+        localizationsDelegates: [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          localizationDelegate
+        ],
+        supportedLocales: localizationDelegate.supportedLocales,
+        locale: localizationDelegate.currentLocale,
+        darkTheme: ThemeData(
+          brightness: Brightness.dark,
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          primarySwatch: Colors.grey,
+          accentColor: Colors.grey,
+          cardColor: Colors.grey[850],
+          fontFamily: 'JosefinSans',
+        ),
+        theme: ThemeData(
+          splashColor: Colors.transparent,
+          cardColor: Colors.grey[50],
+          highlightColor: Colors.transparent,
+          primarySwatch: Colors.grey,
+          fontFamily: 'JosefinSans',
+        ),
+        home: MyHomePage(title: 'fasttake'),
       ),
-      theme: ThemeData(
-        splashColor: Colors.transparent,
-        cardColor: Colors.grey[50],
-        highlightColor: Colors.transparent,
-        primarySwatch: Colors.grey,
-        fontFamily: 'JosefinSans',
-      ),
-      home: MyHomePage(title: 'fasttake'),
     );
   }
 }
@@ -92,9 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: const EdgeInsets.only(top: 60.0),
                 child: Text(
                   'fasttake',
-                  style: TextStyle(
-                      fontSize: 50,
-                      fontWeight: FontWeight.w200),
+                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.w200),
                 ),
               ),
               Container(
@@ -120,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 margin: EdgeInsets.only(top: 30.0),
                 child: Text(
-                  "new take",
+                  translate('home.new_take_area.new_take_title'),
                   style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.w300,

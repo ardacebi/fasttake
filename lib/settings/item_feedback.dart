@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_translate/flutter_translate.dart';
 
 class SettingsItemFeedback extends StatefulWidget {
   @override
@@ -41,11 +43,11 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
           Padding(
               padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
               child: Text(
-                  "from this page, you can give feedback on fasttake for us to improve the app. you can report all kinds of bugs you see on your device or even suggest features you'd like to see in fasttake.")),
+                  translate('settings_feedback.items.description1'))),
           Padding(
               padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
               child: Text(
-                  "all feedback sent from this page is anonymous and will be used to only improve the fasttake app.")),
+                  translate('settings_feedback.items.description2'))),
           Padding(
             padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
             child: Container(
@@ -57,7 +59,7 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
                 decoration: InputDecoration(
                   prefixIcon: Icon(SimpleLineIcons.info),
                   border: OutlineInputBorder(),
-                  labelText: 'your thoughts',
+                  labelText: translate('settings_feedback.items.your_thoughts'),
                 ),
               ),
             ),
@@ -67,7 +69,7 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
               child: ConstrainedBox(
                 constraints: const BoxConstraints(minWidth: double.infinity),
                 child: new OutlineButton.icon(
-                  label: Text("Upload attachments"),
+                  label: Text(translate('settings_feedback.items.upload_attachments')),
                   icon: Icon(Icons.attach_file),
                   onPressed: () {
                     FilePicker.getMultiFilePath();
@@ -80,7 +82,7 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
             child: ConstrainedBox(
                 constraints: const BoxConstraints(minWidth: double.infinity),
                 child: RaisedButton(
-                  child: Text("Send feedback"),
+                  child: Text(translate('settings_feedback.items.send_feedback')),
                   onPressed: () {},
                 ),
               ),
