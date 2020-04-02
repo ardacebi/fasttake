@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
+
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_translate/flutter_translate.dart';
@@ -86,17 +86,15 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                       margin: const EdgeInsets.only(right: 5.0),
                       child: OutlineButton.icon(
                         onPressed: () {
-                          DatePicker.showDatePicker(context,
-                              showTitleActions: true,
-                              minTime: DateTime.now(), onChanged: (date) {
-                            print('change $date');
-                          }, onConfirm: (date) {
-                            print('confirm $date');
-                          },
-                              currentTime: DateTime.now(),
-                              locale: LocaleType.en);
+                          Future<DateTime> selectedDate = showDatePicker(
+                            context: context,
+                            initialDate: DateTime.now(),
+                            firstDate: DateTime(2020),
+                            lastDate: DateTime(2030),
+                          );
                         },
-                        label: Text(translate('new_take_text_details.set_date')),
+                        label:
+                            Text(translate('new_take_text_details.set_date')),
                         icon: Icon(SimpleLineIcons.calendar),
                       ),
                     ),
@@ -106,16 +104,13 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                       margin: const EdgeInsets.only(left: 5.0),
                       child: OutlineButton.icon(
                         onPressed: () {
-                          DatePicker.showTimePicker(context,
-                              showTitleActions: true, onChanged: (date) {
-                            print('change $date');
-                          }, onConfirm: (date) {
-                            print('confirm $date');
-                          },
-                              currentTime: DateTime.now(),
-                              locale: LocaleType.en);
+                          Future<TimeOfDay> selectedTime = showTimePicker(
+                            initialTime: TimeOfDay.now(),
+                            context: context,
+                          );
                         },
-                        label: Text(translate('new_take_text_details.set_time')),
+                        label:
+                            Text(translate('new_take_text_details.set_time')),
                         icon: Icon(SimpleLineIcons.clock),
                       ),
                     ),

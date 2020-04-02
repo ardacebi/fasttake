@@ -24,7 +24,6 @@ dependencies:
   sqflite:
   path:
 
-  flutter_datetime_picker: ^1.3.5
   flutter_vector_icons: ^0.2.1
   page_transition: ^1.1.5
   package_info: ^0.4.0+16
