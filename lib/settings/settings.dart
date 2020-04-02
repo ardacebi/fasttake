@@ -146,6 +146,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                         changeLocale(context, 'it');
                         Navigator.pop(context);
                       },
+                      hasArrow: true,
                     ),
                     ActionSheetAction(
                       text: 'Türkçe',
@@ -153,6 +154,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                         changeLocale(context, 'tr');
                         Navigator.pop(context);
                       },
+                      hasArrow: true,
                     ),
                     ActionSheetAction(
                       text: translate('settings_language.items.cancel'),
