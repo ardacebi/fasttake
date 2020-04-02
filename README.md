@@ -29,7 +29,7 @@ An app to take notes of those that come up on your mind without waiting. Written
     - [ ] Italian (Under translation)
     - [ ] Spanish
     - [ ] German
-    - [ ] Turkish (Under translation)
+    - [x] Turkish
 - [ ] v1.0.1
     - [ ] Fix reported bugs via Bug report page
 - [ ] v1.1.0
