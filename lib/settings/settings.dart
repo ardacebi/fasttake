@@ -133,7 +133,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                   message: Text(translate('settings_language.subtitle')),
                   actions: [
                     ActionSheetAction(
-                      text: translate('settings_language.items.en'),
+                      text: 'English',
                       onPressed: () {
                         changeLocale(context, 'en_US');
                         Navigator.pop(context);
@@ -141,14 +141,14 @@ class _SettingsRouteState extends State<SettingsRoute> {
                       hasArrow: true,
                     ),
                     ActionSheetAction(
-                      text: translate('settings_language.items.it'),
+                      text: 'Italiano',
                       onPressed: () {
                         changeLocale(context, 'it');
                         Navigator.pop(context);
                       },
                     ),
                     ActionSheetAction(
-                      text: translate('settings_language.items.tr'),
+                      text: 'Türkçe',
                       onPressed: () {
                         changeLocale(context, 'tr');
                         Navigator.pop(context);
