@@ -1,7 +1,4 @@
 <img src="/readme_assets/fasttake_repo.png" alt="fasttake logo" align="middle">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 An app to take notes of those that come up on your mind without waiting. Written in Dart using Flutter.
 
@@ -9,7 +6,9 @@ An app to take notes of those that come up on your mind without waiting. Written
 ![License](https://img.shields.io/github/license/ardacebi/fasttake?style=flat-square)
 ![stable](https://img.shields.io/github/v/release/ardacebi/fasttake?label=stable&style=flat-square)
 ![Issues](https://img.shields.io/github/issues/ardacebi/fasttake?style=flat-square)
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Roadmap and to-do
 - [ ] v1.0.0
