@@ -1,89 +1,87 @@
 {
     "home": {
-        "search_bar": {
-            "label": "search takes"
-        },
         "card": {
-            "dot_menu_delete": "delete",
-            "dot_menu_pin": "pin"
+            "dot_menu_pin": "sabitle",
+            "dot_menu_delete": "sil"
+        },
+        "search_bar": {
+            "label": "notlarda ara"
         },
         "new_take_area": {
-            "new_take_title": "new take"
+            "new_take_title": "yeni not"
         },
         "settings_button": {
-            "settings_button": "settings"
+            "settings_button": "ayarlar"
         }
     },
     "new_take_text": {
-        "title": "new take"
+        "title": "yeni not",
+        "done": "bitti"
     },
     "new_take_text_details": {
-        "title": "details",
-        "subject": "subject",
-        "tags": "tags",
-        "reminders": "reminders",
-        "set_date": "set date",
-        "set_time": "set time",
-        "save_take": "save take"
+        "title": "detaylar",
+        "subject": "konu",
+        "tags": "etiketler",
+        "reminders": "hat\u0131rlat\u0131c\u0131lar",
+        "set_date": "Tarih ayarla",
+        "set_time": "Zaman ayarla",
+        "save_take": "Notu kaydet"
     },
     "settings": {
-        "title": "settings",
+        "title": "ayarlar",
         "items": {
-            "notifications": "notifications",
-            "security": "security",
-            "theme": "theme",
-            "language": "language",
-            "feedback": "feedback",
-            "share_with_friends": "share with friends"
+            "notifications": "Bildirimler",
+            "security": "G\u00fcvenlik",
+            "theme": "Tema",
+            "language": "Dil",
+            "feedback": "Geri bildirim",
+            "share_with_friends": "Arkada\u015flar\u0131nla payla\u015f"
         }
     },
     "settings_notifications": {
-        "title": "notifications",
-        "subtitle": "settings",
+        "title": "bildirimler",
+        "subtitle": "ayarlar",
         "items": {
-            "take_reminders": "take reminders",
-            "regular_reminding": "regular reminding of your ideas",
-            "app_updates": "app updates",
-            "tips_tricks": "tips & tricks"
+            "take_reminders": "Not hat\u0131rlat\u0131c\u0131lar\u0131",
+            "regular_reminding": "Fikirlerin d\u00fczenli hat\u0131rlat\u0131lmas\u0131",
+            "tips_tricks": "\u0130pu\u00e7lar\u0131 & hileler",
+            "app_updates": "Uygulama g\u00fcncellemeleri"
         }
     },
     "settings_security": {
-        "title": "security",
-        "subtitle": "settings",
+        "title": "g\u00fcvenlik",
+        "subtitle": "ayarlar",
         "items": {
-            "app_lock": "app lock"
+            "app_lock": "Uygulama kilidi"
         }
     },
     "settings_theme": {
-        "title": "theme",
-        "subtitle": "settings",
+        "title": "tema",
+        "subtitle": "ayarlar",
         "items": {
-            "auto": "auto (system)",
-            "dark": "dark",
-            "light": "light"
+            "auto": "Otomatik (sistem)",
+            "dark": "Koyu",
+            "light": "A\u00e7\u0131k"
         }
     },
     "settings_language": {
-        "subtitle": "choose a language to use fasttake with",
+        "subtitle": "fasttake'i kullanmak i\u00e7in bir dil se\u00e7in",
         "items": {
-            "cancel": "cancel",
-            "en": "english",
-            "it": "italian",
-            "tr": "turkish"
+            "cancel": "Vazge\u00e7"
         }
     },
     "settings_feedback": {
-        "title": "feedback",
-        "subtitle": "settings",
+        "title": "geri bildirim",
+        "subtitle": "ayarlar",
         "items": {
-            "description1": "from this page, you can give feedback on fasttake for us to improve the app. you can report all kinds of bugs you see on your device or even suggest features you'd like to see in fasttake.",
-            "description2": "all feedback sent from this page is anonymous and will be used to only improve the fasttake app.",
-            "your_thoughts": "your thoughts",
-            "upload_attachments": "upload attachments",
-            "send_feedback": "send feedback"
+            "description1": "Bu sayfadan fasttake'i geli\u015ftirmemiz i\u00e7in geri bildirim g\u00f6nderebilirsiniz. Uygulamada kar\u015f\u0131la\u015ft\u0131\u011f\u0131n\u0131z her t\u00fcrl\u00fc hatay\u0131 bildirebilir, veya akl\u0131n\u0131za gelen fikirleri eklememiz i\u00e7in bize iletebilirsiniz.",
+            "description2": "Bu sayfadan g\u00f6nderilen t\u00fcm geri bildirim anonimdir ve sadece fasttake'i geli\u015ftirmek i\u00e7in kullan\u0131l\u0131r.",
+            "your_thoughts": "D\u00fc\u015f\u00fcncelerin neler?",
+            "upload_attachments": "Ek ekle",
+            "send_feedback": "Geri bildirim g\u00f6nder"
         }
     },
     "settings_share_with_friends": {
-        "message": "check out fasttake, stop forgetting those awesome ideas that come up on your mind!"
+        "message": "fasttake'e g\u00f6z at, akl\u0131na gelen o inan\u0131lmaz fikirleri unutmay\u0131 b\u0131rak!"
     }
 }

@@ -67,10 +67,7 @@
     "settings_language": {
         "subtitle": "Choose a language to use fasttake with",
         "items": {
-            "cancel": "Cancel",
-            "en": "English",
-            "it": "Italian",
-            "tr": "Turkish"
+            "cancel": "Cancel"
         }
     },
     "settings_feedback": {
