@@ -11,6 +11,7 @@ import 'package:share/share.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:platform_action_sheet/platform_action_sheet.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsRoute extends StatefulWidget {
   SettingsRoute({Key key, this.title}) : super(key: key);

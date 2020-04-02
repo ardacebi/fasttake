@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_translate/flutter_translate.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsItemTheme extends StatefulWidget {
   @override

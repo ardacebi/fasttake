@@ -33,6 +33,7 @@ dependencies:
   file_picker: ^1.5.1
   flutter_translate: ^1.5.7
   platform_action_sheet: ^0.0.3
+  shared_preferences: ^0.5.6+3
 
 dev_dependencies:
   flutter_test:
