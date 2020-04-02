@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "baranonen",
+      "name": "Baran Önen",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/40770499?v=4",
+      "profile": "http://baranonen.com",
+      "contributions": [
+        "ideas",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "fasttake",
+  "projectOwner": "ardacebi",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
