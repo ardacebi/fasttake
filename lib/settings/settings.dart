@@ -134,16 +134,25 @@ class _SettingsRouteState extends State<SettingsRoute> {
                   actions: [
                     ActionSheetAction(
                       text: translate('settings_language.items.en'),
-                      onPressed: () => changeLocale(context, 'en_US'),
+                      onPressed: () {
+                        changeLocale(context, 'en_US');
+                        Navigator.pop(context);
+                      },
                       hasArrow: true,
                     ),
                     ActionSheetAction(
                       text: translate('settings_language.items.it'),
-                      onPressed: () => changeLocale(context, 'it'), 
+                      onPressed: () {
+                        changeLocale(context, 'it');
+                        Navigator.pop(context);
+                      },
                     ),
                     ActionSheetAction(
                       text: translate('settings_language.items.tr'),
-                      onPressed: () => changeLocale(context, 'tr'), 
+                      onPressed: () {
+                        changeLocale(context, 'tr');
+                        Navigator.pop(context);
+                      },
                     ),
                     ActionSheetAction(
                       text: translate('settings_language.items.cancel'),
@@ -171,8 +180,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
             title: Text((translate('settings.items.share_with_friends'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-              Share.share(
-                  translate('settings_share_with_friends.message'));
+              Share.share(translate('settings_share_with_friends.message'));
             },
           ),
           Expanded(
