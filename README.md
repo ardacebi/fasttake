@@ -2,8 +2,6 @@
 
 An app to take notes of those that come up on your mind without waiting. Written in Dart using Flutter.
 
-This branch is a concept version of the fasttake app. It will include a potentional name change, a whole design and branding change and more based on instant thoughts. All contributions are welcome.
-
 [![Travis CI Build](https://img.shields.io/travis/com/ardacebi/fasttake?style=flat-square)](https://travis-ci.com/github/ardacebi/fasttake)
 ![License](https://img.shields.io/github/license/ardacebi/fasttake?style=flat-square)
 ![stable](https://img.shields.io/github/v/release/ardacebi/fasttake?label=stable&style=flat-square)
