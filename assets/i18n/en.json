@@ -4,6 +4,13 @@
         "save": "Save",
         "quick_save": "Quick save"
     },
+        "login": {
+            "username":"Username",
+            "password": "Password",
+            "forgotpass":"Forgot password?",
+            "login":"Login",
+            "signup":"Sign up"
+        },
     "new_take_text_details": {
         "title": "details",
         "subject": "subject",
