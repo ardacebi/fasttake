@@ -1,18 +1,10 @@
 {
     "home": {
-        "search_bar": {
-            "label": "search takes"
+        "landing": {
+            "label": "What's on your mind?"
         },
-        "card": {
-            "dot_menu_delete": "delete",
-            "dot_menu_pin": "pin"
-        },
-        "new_take_area": {
-            "new_take_title": "new take"
-        },
-        "settings_button": {
-            "settings_button": "settings"
-        }
+        "save": "Save",
+        "quick_save": "Quick save"
     },
     "new_take_text": {
         "title": "new take",
