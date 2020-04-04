@@ -42,6 +42,7 @@ class _LoginRouteState extends State<LoginRoute> {
                       ),
                       Container(
                         child: TextFormField(
+                          obscureText: true,
                           decoration: InputDecoration(
                             prefixIcon: Icon(SimpleLineIcons.key),
                             border: OutlineInputBorder(),
