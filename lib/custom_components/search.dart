@@ -5,7 +5,7 @@ import 'package:flutter_translate/flutter_translate.dart';
 
 
 InputDecoration customSearch = InputDecoration(
-  hintText: translate(('home.search_bar.label')),
+  hintText: translate(('home.search_bar')),
   border: OutlineInputBorder(
     borderRadius: BorderRadius.circular(50.0),
   ),
