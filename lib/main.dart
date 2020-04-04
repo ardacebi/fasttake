@@ -1,4 +1,5 @@
 import 'package:fasttake/settings/settings.dart';
+import 'package:fasttake/take_details.dart';
 import 'package:flutter/material.dart';
 import 'custom_components/search.dart';
 import 'custom_components/take.dart';
@@ -111,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Padding(
                 padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
                 child: Container(
-                  margin: const EdgeInsets.only(bottom: 20.0),
+                  margin: const EdgeInsets.only(bottom: 10.0),
                   child: TextField(
                     maxLines: null,
                     minLines: 5,
@@ -123,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(left: 20.0, right: 20.0),
+                margin: const EdgeInsets.only(left: 20.0, right: 20.0, bottom:10.0),
                 child: Row(
                   children: <Widget>[
                     Expanded(
@@ -135,7 +136,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             translate('home.save'),
                             style: TextStyle(fontWeight: FontWeight.w400),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => TakeDetailsRoute()),
+                            );
+                          },
                         ),
                       ),
                     ),
