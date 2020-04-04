@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_translate/flutter_translate.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'auth.dart';
+
 
 class LoginRoute extends StatefulWidget {
+  LoginRoute({this.auth});
+  final BaseAuth auth;
   @override
   _LoginRouteState createState() => _LoginRouteState();
 }
@@ -31,15 +34,11 @@ class _LoginRouteState extends State<LoginRoute> {
     if (validateAndSave()) {
       try {
         if (_formType == Formtype.login) {
-          FirebaseUser user = (await FirebaseAuth.instance
-              .signInWithEmailAndPassword(
-                  email: _email, password: _password)) as FirebaseUser;
-          print('Signed in: ${user.uid}');
+          String userId = await widget.auth.signInWithEmailAndPassword(_email, _password);
+          print('Signed in: ${userId}');
         } else {
-          FirebaseUser user = (await FirebaseAuth.instance
-              .createUserWithEmailAndPassword(
-                  email: _email, password: _password)) as FirebaseUser;
-          print('Registered: ${user.uid}');
+          String userId = await widget.auth.createUserWithEmailAndPassword(_email, _password);
+          print('Registered: ${userId}');
         }
       } catch (e) {
         print('Error: $e');

@@ -10,6 +10,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:fasttake/login.dart';
+import 'auth.dart';
 
 void main() async {
   var delegate = await LocalizationDelegate.create(
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.grey,
           fontFamily: 'JosefinSans',
         ),
-        home: new LoginRoute(),
+        home: new LoginRoute(auth: new Auth())
       ),
     );
   }
