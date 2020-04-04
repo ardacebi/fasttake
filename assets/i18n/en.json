@@ -27,12 +27,20 @@
     "settings": {
         "title": "settings",
         "items": {
+            "account": "Account",
             "notifications": "Notifications",
             "security": "Security",
             "theme": "Theme",
             "language": "Language",
             "feedback": "Feedback",
-            "share_with_friends": "Share with friends"
+            "share_with_friends": "Share with friends",
+            "sign_out": "Sign out"
+        }
+    },
+    "settings_account": {
+        "title": "account",
+        "subtitle": "settings",
+        "items": {
         }
     },
     "settings_notifications": {
