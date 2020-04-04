@@ -6,10 +6,13 @@
     },
         "login": {
             "username":"Username",
+            "email":"Email",
             "password": "Password",
             "forgotpass":"Forgot password?",
             "login":"Login",
-            "signup":"Sign up"
+            "signup":"Sign up",
+            "login_long":"Already have an account? Log in.",
+            "signup_long":"Don't have an account? Sign up."
         },
     "new_take_text_details": {
         "title": "details",
