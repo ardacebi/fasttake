@@ -1,5 +1,6 @@
 import 'package:fasttake/settings/settings.dart';
 import 'package:fasttake/take_details.dart';
+import 'package:fasttake/welcome.dart';
 import 'package:flutter/material.dart';
 import 'custom_components/search.dart';
 import 'custom_components/take.dart';
