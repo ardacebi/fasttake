@@ -1,14 +1,8 @@
 {
     "home": {
-        "landing": {
-            "label": "What's on your mind?"
-        },
+        "landing_label":"What's on your mind?",
         "save": "Save",
         "quick_save": "Quick save"
-    },
-    "new_take_text": {
-        "title": "new take",
-        "done": "done"
     },
     "new_take_text_details": {
         "title": "details",

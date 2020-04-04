@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 margin: const EdgeInsets.only(top: 60.0, left: 20.0),
                 child: Text(
-                  translate('home.landing.label'),
+                  translate('home.landing_label'),
                   style: TextStyle(fontSize: 50, fontWeight: FontWeight.w300),
                 ),
               ),
