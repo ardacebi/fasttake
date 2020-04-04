@@ -2,7 +2,8 @@
     "home": {
         "landing_label":"What's on your mind?",
         "save": "Save",
-        "quick_save": "Quick save"
+        "quick_save": "Quick save",
+        "search_bar": "Search takes"
     },
         "login": {
             "username":"Username",

@@ -6,8 +6,10 @@ import 'auth.dart';
 
 
 class LoginRoute extends StatefulWidget {
-  LoginRoute({this.auth});
+  LoginRoute({this.auth, this.onSignedIn});
   final BaseAuth auth;
+  final VoidCallback onSignedIn;
+
   @override
   _LoginRouteState createState() => _LoginRouteState();
 }
@@ -40,6 +42,7 @@ class _LoginRouteState extends State<LoginRoute> {
           String userId = await widget.auth.createUserWithEmailAndPassword(_email, _password);
           print('Registered: ${userId}');
         }
+        widget.onSignedIn();
       } catch (e) {
         print('Error: $e');
       }
