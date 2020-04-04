@@ -1,23 +1,20 @@
 {
     "home": {
-        "search_bar": {
-            "label": "search takes"
-        },
-        "card": {
-            "dot_menu_delete": "delete",
-            "dot_menu_pin": "pin"
-        },
-        "new_take_area": {
-            "new_take_title": "new take"
-        },
-        "settings_button": {
-            "settings_button": "settings"
-        }
+        "landing_label":"What's on your mind?",
+        "save": "Save",
+        "quick_save": "Quick save",
+        "search_bar": "Search takes"
     },
-    "new_take_text": {
-        "title": "new take",
-        "done": "done"
-    },
+        "login": {
+            "username":"Username",
+            "email":"Email",
+            "password": "Password",
+            "forgotpass":"Forgot password?",
+            "login":"Login",
+            "signup":"Sign up",
+            "login_long":"Already have an account? Log in.",
+            "signup_long":"Don't have an account? Sign up."
+        },
     "new_take_text_details": {
         "title": "details",
         "subject": "subject",
@@ -30,12 +27,20 @@
     "settings": {
         "title": "settings",
         "items": {
+            "account": "Account",
             "notifications": "Notifications",
             "security": "Security",
             "theme": "Theme",
             "language": "Language",
             "feedback": "Feedback",
-            "share_with_friends": "Share with friends"
+            "share_with_friends": "Share with friends",
+            "sign_out": "Sign out"
+        }
+    },
+    "settings_account": {
+        "title": "account",
+        "subtitle": "settings",
+        "items": {
         }
     },
     "settings_notifications": {

@@ -1,9 +1,9 @@
+import 'package:fasttake/settings/item_account.dart';
 import 'package:fasttake/settings/item_focusmode.dart';
 import 'package:fasttake/settings/item_security.dart';
 import 'package:fasttake/settings/item_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:fasttake/settings/item_notifications.dart';
 import 'package:fasttake/settings/item_feedback.dart';
 import 'package:package_info/package_info.dart';
@@ -12,9 +12,22 @@ import 'package:flutter_translate/flutter_translate.dart';
 import 'package:platform_action_sheet/platform_action_sheet.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:fasttake/auth.dart';
 
 class SettingsRoute extends StatefulWidget {
-  SettingsRoute({Key key, this.title}) : super(key: key);
+  SettingsRoute({Key key, this.auth, this.onSignedOut, this.title})
+      : super(key: key);
+  final BaseAuth auth;
+  final VoidCallback onSignedOut;
+
+  void _signOut() async {
+    try {
+      await auth.signOut();
+      onSignedOut();
+    } catch (e) {
+      print(e);
+    }
+  }
 
   final String title;
 
@@ -71,6 +84,19 @@ class _SettingsRouteState extends State<SettingsRoute> {
       body: new Column(
         children: <Widget>[
           ListTile(
+            leading: Icon(SimpleLineIcons.user),
+            title: Text(
+              (translate('settings.items.account')),
+            ),
+            trailing: Icon(SimpleLineIcons.arrow_right),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SettingsItemAccount()),
+              );
+            },
+          ),
+          ListTile(
             leading: Icon(SimpleLineIcons.bell),
             title: Text(
               (translate('settings.items.notifications')),
@@ -78,10 +104,10 @@ class _SettingsRouteState extends State<SettingsRoute> {
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.rightToLeftWithFade,
-                      child: SettingsItemNotifications()));
+                context,
+                MaterialPageRoute(
+                    builder: (context) => SettingsItemNotifications()),
+              );
             },
           ),
           /*  ListTile(
@@ -103,10 +129,9 @@ class _SettingsRouteState extends State<SettingsRoute> {
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.rightToLeftWithFade,
-                      child: SettingsItemSecurity()));
+                context,
+                MaterialPageRoute(builder: (context) => SettingsItemSecurity()),
+              );
             },
           ),
           ListTile(
@@ -115,10 +140,9 @@ class _SettingsRouteState extends State<SettingsRoute> {
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.rightToLeftWithFade,
-                      child: SettingsItemTheme()));
+                context,
+                MaterialPageRoute(builder: (context) => SettingsItemTheme()),
+              );
             },
           ),
           ListTile(
@@ -172,10 +196,9 @@ class _SettingsRouteState extends State<SettingsRoute> {
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
               Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.rightToLeftWithFade,
-                      child: SettingsItemFeedback()));
+                context,
+                MaterialPageRoute(builder: (context) => SettingsItemFeedback()),
+              );
             },
           ),
           ListTile(
@@ -185,6 +208,12 @@ class _SettingsRouteState extends State<SettingsRoute> {
             onTap: () {
               Share.share(translate('settings_share_with_friends.message'));
             },
+          ),
+          ListTile(
+            leading: Icon(SimpleLineIcons.logout),
+            title: Text((translate('settings.items.sign_out'))),
+            trailing: Icon(SimpleLineIcons.arrow_right),
+            
           ),
           Expanded(
             child: Align(
@@ -207,3 +236,5 @@ class _SettingsRouteState extends State<SettingsRoute> {
     );
   }
 }
+
+

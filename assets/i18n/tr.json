@@ -1,18 +1,8 @@
 {
     "home": {
-        "card": {
-            "dot_menu_pin": "sabitle",
-            "dot_menu_delete": "sil"
-        },
-        "search_bar": {
-            "label": "notlarda ara"
-        },
-        "new_take_area": {
-            "new_take_title": "yeni not"
-        },
-        "settings_button": {
-            "settings_button": "ayarlar"
-        }
+        "landing_label":"Aklında ne var?",
+        "save": "Kaydet",
+        "quick_save": "Hızlı kaydet"
     },
     "new_take_text": {
         "title": "yeni not",
