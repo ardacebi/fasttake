@@ -1,4 +1,5 @@
 import 'package:fasttake/settings/settings.dart';
+import 'package:fasttake/signup.dart';
 import 'package:fasttake/take_details.dart';
 import 'package:fasttake/welcome.dart';
 import 'package:flutter/material.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.grey,
           fontFamily: 'JosefinSans',
         ),
-        home: new LoginRoute(),
+        home: new SignUpRoute(),
       ),
     );
   }
