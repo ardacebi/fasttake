@@ -76,7 +76,11 @@ class _SettingsRouteState extends State<SettingsRoute> {
             ),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-              
+               Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SettingsItemNotifications()),
+                            );
             },
           ),
           /*  ListTile(
@@ -97,7 +101,11 @@ class _SettingsRouteState extends State<SettingsRoute> {
             title: Text((translate('settings.items.security'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-              
+              Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SettingsItemSecurity()),
+                            );
             },
           ),
           ListTile(
@@ -105,7 +113,11 @@ class _SettingsRouteState extends State<SettingsRoute> {
             title: Text((translate('settings.items.theme'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-             
+             Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SettingsItemTheme()),
+                            );
             },
           ),
           ListTile(
@@ -158,7 +170,11 @@ class _SettingsRouteState extends State<SettingsRoute> {
             title: Text((translate('settings.items.feedback'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-             
+             Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SettingsItemFeedback()),
+                            );
             },
           ),
           ListTile(

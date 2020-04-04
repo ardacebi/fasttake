@@ -124,6 +124,19 @@ class HomeRoute extends StatelessWidget {
                           ),
                           onPressed: _signOut
                         ),
+                        OutlineButton(
+                          child: Text(
+                            "Settings",
+                            style: TextStyle(fontWeight: FontWeight.w400),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SettingsRoute()),
+                            );
+                          } 
+                        ),
                   ],
                 ),
                 
