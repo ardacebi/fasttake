@@ -42,6 +42,7 @@ class _SignUpRouteState extends State<SignUpRoute> {
                       ),
                       Container(
                         child: TextFormField(
+                          obscureText: true,
                           decoration: InputDecoration(
                             prefixIcon: Icon(SimpleLineIcons.key),
                             border: OutlineInputBorder(),
