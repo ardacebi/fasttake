@@ -3,7 +3,6 @@ import 'package:fasttake/settings/item_security.dart';
 import 'package:fasttake/settings/item_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:fasttake/settings/item_notifications.dart';
 import 'package:fasttake/settings/item_feedback.dart';
 import 'package:package_info/package_info.dart';
@@ -77,11 +76,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
             ),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-              Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.rightToLeftWithFade,
-                      child: SettingsItemNotifications()));
+              
             },
           ),
           /*  ListTile(
@@ -102,11 +97,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
             title: Text((translate('settings.items.security'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-              Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.rightToLeftWithFade,
-                      child: SettingsItemSecurity()));
+              
             },
           ),
           ListTile(
@@ -114,11 +105,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
             title: Text((translate('settings.items.theme'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-              Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.rightToLeftWithFade,
-                      child: SettingsItemTheme()));
+             
             },
           ),
           ListTile(
@@ -171,11 +158,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
             title: Text((translate('settings.items.feedback'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
             onTap: () {
-              Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.rightToLeftWithFade,
-                      child: SettingsItemFeedback()));
+             
             },
           ),
           ListTile(

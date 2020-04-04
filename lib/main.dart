@@ -1,18 +1,11 @@
-import 'package:fasttake/new_take.dart';
 import 'package:fasttake/settings/settings.dart';
 import 'package:flutter/material.dart';
-import 'custom_components/take_button_text.dart';
-import 'custom_components/take_button_voice.dart';
-import 'custom_components/settings_button.dart';
 import 'custom_components/search.dart';
 import 'custom_components/take.dart';
 import 'package:flutter/widgets.dart';
-import 'package:page_transition/page_transition.dart';
-import 'dart:async';
-import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
@@ -109,81 +102,97 @@ class _MyHomePageState extends State<MyHomePage> {
             // horizontal).
             children: <Widget>[
               Container(
-                margin: const EdgeInsets.only(top: 60.0),
+                margin: const EdgeInsets.only(top: 60.0, left: 20.0),
                 child: Text(
-                  'fasttake',
-                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.w200),
+                  translate('home.landing.label'),
+                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.w300),
                 ),
               ),
-              Container(
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      margin: const EdgeInsets.only(
-                          left: 25.0, right: 25.0, top: 10.0),
-                      child: TextField(
-                        decoration: customSearch,
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(
-                          left: 25.0, right: 25.0, top: 20.0),
-                      child: TakeCard(
-                        onPressed: () {},
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 30.0),
-                child: Text(
-                  translate('home.new_take_area.new_take_title'),
-                  style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w300,
-                  ),
-                ),
-              ),
-              new Container(
-                margin:
-                    const EdgeInsets.only(left: 25.0, right: 25.0, top: 20.0),
-                child: new Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: TakeButtonText(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              PageTransition(
-                                  type: PageTransitionType.rightToLeftWithFade,
-                                  child: EditorRoute()));
-                        },
-                      ),
-                    ),
-                    Expanded(
-                      child: TakeButtonVoice(
-                        onPressed: () {},
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              new ConstrainedBox(
-                constraints: const BoxConstraints(minWidth: double.infinity),
+              Padding(
+                padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
                 child: Container(
-                  margin:
-                      const EdgeInsets.only(left: 25.0, right: 25.0, top: 10.0),
-                  child: SettingsButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          PageTransition(
-                              type: PageTransitionType.rightToLeftWithFade,
-                              child: SettingsRoute()));
-                    },
+                  margin: const EdgeInsets.only(bottom: 20.0),
+                  child: TextField(
+                    maxLines: null,
+                    minLines: 5,
+                    textCapitalization: TextCapitalization.sentences,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                    ),
                   ),
                 ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(left: 20.0, right: 20.0),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: ConstrainedBox(
+                        constraints:
+                            const BoxConstraints(minWidth: double.infinity),
+                        child: new OutlineButton(
+                          child: Text(
+                            translate('home.save'),
+                            style: TextStyle(fontWeight: FontWeight.w400),
+                          ),
+                          onPressed: () {},
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: ConstrainedBox(
+                        constraints:
+                            const BoxConstraints(minWidth: double.infinity),
+                        child: new OutlineButton(
+                          child: Text(
+                            translate('home.quick_save'),
+                            style: TextStyle(fontWeight: FontWeight.w400),
+                          ),
+                          onPressed: () {},
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.only(
+                        left: 25.0, right: 25.0, top: 10.0),
+                    child: TextField(
+                      decoration: customSearch,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(
+                        left: 25.0, right: 25.0, top: 20.0),
+                    child: TakeCard(
+                      onPressed: () {},
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(
+                        left: 25.0, right: 25.0, top: 20.0),
+                    child: TakeCard(
+                      onPressed: () {},
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(
+                        left: 25.0, right: 25.0, top: 20.0),
+                    child: TakeCard(
+                      onPressed: () {},
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(
+                        left: 25.0, right: 25.0, top: 20.0),
+                    child: TakeCard(
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
