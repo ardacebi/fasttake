@@ -2,20 +2,13 @@ import 'package:flutter/material.dart';
 import 'auth.dart';
 import 'package:fasttake/settings/settings.dart';
 import 'package:fasttake/take_details.dart';
-import 'package:flutter/material.dart';
 import 'custom_components/search.dart';
 import 'custom_components/take.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_translate/flutter_translate.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:fasttake/login.dart';
-import 'auth.dart';
-import 'root.dart';
 
 class HomeRoute extends StatelessWidget {
-   HomeRoute({Key key, this.auth, this.onSignedOut, this.title})
+  HomeRoute({Key key, this.auth, this.onSignedOut, this.title})
       : super(key: key);
   final BaseAuth auth;
   final VoidCallback onSignedOut;
@@ -118,28 +111,25 @@ class HomeRoute extends StatelessWidget {
                       ),
                     ),
                     OutlineButton(
-                          child: Text(
-                            "Sign out",
-                            style: TextStyle(fontWeight: FontWeight.w400),
-                          ),
-                          onPressed: _signOut
+                        child: Text(
+                          "Sign out",
+                          style: TextStyle(fontWeight: FontWeight.w400),
                         ),
-                        OutlineButton(
-                          child: Text(
-                            "Settings",
-                            style: TextStyle(fontWeight: FontWeight.w400),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => SettingsRoute()),
-                            );
-                          } 
+                        onPressed: _signOut),
+                    OutlineButton(
+                        child: Text(
+                          "Settings",
+                          style: TextStyle(fontWeight: FontWeight.w400),
                         ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SettingsRoute()),
+                          );
+                        }),
                   ],
                 ),
-                
               ),
               Column(
                 children: <Widget>[

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'auth.dart';
-
 
 class LoginRoute extends StatefulWidget {
   LoginRoute({this.auth, this.onSignedIn});
@@ -36,11 +34,13 @@ class _LoginRouteState extends State<LoginRoute> {
     if (validateAndSave()) {
       try {
         if (_formType == Formtype.login) {
-          String userId = await widget.auth.signInWithEmailAndPassword(_email, _password);
-          print('Signed in: ${userId}');
+          String userId =
+              await widget.auth.signInWithEmailAndPassword(_email, _password);
+          print('Signed in: $userId');
         } else {
-          String userId = await widget.auth.createUserWithEmailAndPassword(_email, _password);
-          print('Registered: ${userId}');
+          String userId = await widget.auth
+              .createUserWithEmailAndPassword(_email, _password);
+          print('Registered: $userId');
         }
         widget.onSignedIn();
       } catch (e) {

@@ -1,17 +1,10 @@
-import 'package:fasttake/settings/item_account.dart';
-import 'package:fasttake/settings/item_focusmode.dart';
-import 'package:fasttake/settings/item_security.dart';
-import 'package:fasttake/settings/item_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:fasttake/settings/item_notifications.dart';
 import 'package:fasttake/settings/item_feedback.dart';
 import 'package:package_info/package_info.dart';
 import 'package:share/share.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:platform_action_sheet/platform_action_sheet.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:fasttake/auth.dart';
 
 class SettingsRoute extends StatefulWidget {
@@ -83,7 +76,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           actions: <Widget>[]),
       body: new Column(
         children: <Widget>[
-         /* ListTile(
+          /* ListTile(
             leading: Icon(SimpleLineIcons.user),
             title: Text(
               (translate('settings.items.account')),
@@ -96,7 +89,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
               );
             },
           ), */
-        /*  ListTile(
+          /*  ListTile(
             leading: Icon(SimpleLineIcons.bell),
             title: Text(
               (translate('settings.items.notifications')),
@@ -123,7 +116,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                       child: SettingsItemFocusedMode()));
             },
           ), */
-        /*  ListTile(
+          /*  ListTile(
             leading: Icon(SimpleLineIcons.shield),
             title: Text((translate('settings.items.security'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
@@ -134,7 +127,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
               );
             },
           ), */
-         /* ListTile(
+          /* ListTile(
             leading: Icon(SimpleLineIcons.magic_wand),
             title: Text((translate('settings.items.theme'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
@@ -213,7 +206,6 @@ class _SettingsRouteState extends State<SettingsRoute> {
             leading: Icon(SimpleLineIcons.logout),
             title: Text((translate('settings.items.sign_out'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
-            
           ),
           Expanded(
             child: Align(
@@ -236,5 +228,3 @@ class _SettingsRouteState extends State<SettingsRoute> {
     );
   }
 }
-
-

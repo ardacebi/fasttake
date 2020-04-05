@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 
 class SettingsItemNotifications extends StatefulWidget {
@@ -57,70 +56,74 @@ class _SettingsItemNotificationsState extends State<SettingsItemNotifications> {
         children: <Widget>[
           ListTile(
             leading: Icon(SimpleLineIcons.clock),
-            title: Text(translate('settings_notifications.items.take_reminders'),
+            title: Text(
+              translate('settings_notifications.items.take_reminders'),
             ),
             trailing: Switch(
-            value: isSwitched,
-            onChanged: (value) {
-              setState(() {
-                isSwitched = value;
-                print(isSwitched);
-              });
-            },
-            activeTrackColor: Colors.grey,
-            activeColor: Colors.grey[900],
-          ),
+              value: isSwitched,
+              onChanged: (value) {
+                setState(() {
+                  isSwitched = value;
+                  print(isSwitched);
+                });
+              },
+              activeTrackColor: Colors.grey,
+              activeColor: Colors.grey[900],
+            ),
             onTap: () {},
           ),
-         ListTile(
+          ListTile(
             leading: Icon(SimpleLineIcons.bulb),
-            title: Text(translate('settings_notifications.items.regular_reminding'),
-                ),
+            title: Text(
+              translate('settings_notifications.items.regular_reminding'),
+            ),
             trailing: Switch(
-            value: isSwitched,
-            onChanged: (value) {
-              setState(() {
-                isSwitched = value;
-                print(isSwitched);
-              });
-            },
-            activeTrackColor: Colors.grey,
-            activeColor: Colors.grey[900],
-          ),
+              value: isSwitched,
+              onChanged: (value) {
+                setState(() {
+                  isSwitched = value;
+                  print(isSwitched);
+                });
+              },
+              activeTrackColor: Colors.grey,
+              activeColor: Colors.grey[900],
+            ),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.cloud_download),
-            title: Text(translate('settings_notifications.items.app_updates'),
-               ),
+            title: Text(
+              translate('settings_notifications.items.app_updates'),
+            ),
             trailing: Switch(
-            value: isSwitched,
-            onChanged: (value) {
-              setState(() {
-                isSwitched = value;
-                print(isSwitched);
-              });
-            },
-            activeTrackColor: Colors.grey,
-            activeColor: Colors.grey[900],
-          ),
+              value: isSwitched,
+              onChanged: (value) {
+                setState(() {
+                  isSwitched = value;
+                  print(isSwitched);
+                });
+              },
+              activeTrackColor: Colors.grey,
+              activeColor: Colors.grey[900],
+            ),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(SimpleLineIcons.paper_plane),
-            title: Text(translate('settings_notifications.items.tips_tricks'),
-               ),
+            title: Text(
+              translate('settings_notifications.items.tips_tricks'),
+            ),
             trailing: Switch(
-            value: isSwitched,
-            onChanged: (value) {
-              setState(() {
-                isSwitched = value;
-                print(isSwitched);
-              });
-            },
-            activeTrackColor: Colors.grey,
-            activeColor: Colors.grey[900],
-          ),
+              value: isSwitched,
+              onChanged: (value) {
+                setState(() {
+                  isSwitched = value;
+                  print(isSwitched);
+                });
+              },
+              activeTrackColor: Colors.grey,
+              activeColor: Colors.grey[900],
+            ),
             onTap: () {},
           ),
         ],

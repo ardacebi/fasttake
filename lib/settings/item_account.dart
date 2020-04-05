@@ -1,23 +1,13 @@
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_translate/flutter_translate.dart';
-import 'package:fasttake/auth.dart';
-import 'dart:async';
-import 'package:firebase_auth/firebase_auth.dart';
 
 class SettingsItemAccount extends StatefulWidget {
   @override
   _SettingsItemAccountState createState() => _SettingsItemAccountState();
 }
 
-
-
 class _SettingsItemAccountState extends State<SettingsItemAccount> {
-
-  
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

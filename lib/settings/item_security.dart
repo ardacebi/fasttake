@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 
 class SettingsItemSecurity extends StatefulWidget {
@@ -41,8 +39,7 @@ class _SettingsItemSecurityState extends State<SettingsItemSecurity> {
         children: <Widget>[
           ListTile(
             leading: Icon(SimpleLineIcons.lock),
-            title:
-                Text(translate('settings_security.items.app_lock')),
+            title: Text(translate('settings_security.items.app_lock')),
             onTap: () {},
           ),
         ],

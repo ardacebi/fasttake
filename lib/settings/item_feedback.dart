@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:file_picker/file_picker.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:uuid/uuid.dart';
-import 'dart:math';
 
 class SettingsItemFeedback extends StatefulWidget {
   @override

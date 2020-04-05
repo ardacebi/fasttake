@@ -20,7 +20,8 @@ class _RootRouteState extends State<RootRoute> {
     super.initState();
     widget.auth.currentUser().then((userId) {
       setState(() {
-        authStatus = userId == null ? AuthStatus.notSignedIn : AuthStatus.signedIn;
+        authStatus =
+            userId == null ? AuthStatus.notSignedIn : AuthStatus.signedIn;
       });
     });
   }

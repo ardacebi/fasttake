@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_translate/flutter_translate.dart';
 
 class SettingsItemFocusedMode extends StatefulWidget {
   @override
-  _SettingsItemFocusedModeState createState() => _SettingsItemFocusedModeState();
+  _SettingsItemFocusedModeState createState() =>
+      _SettingsItemFocusedModeState();
 }
 
 class _SettingsItemFocusedModeState extends State<SettingsItemFocusedMode> {
@@ -17,10 +16,10 @@ class _SettingsItemFocusedModeState extends State<SettingsItemFocusedMode> {
     return new Scaffold(
       appBar: new AppBar(
         leading: new IconButton(
-            icon: new Icon(SimpleLineIcons.arrow_left),
-            onPressed: () => Navigator.of(context).pop(),
-          ),
-           actions: <Widget>[
+          icon: new Icon(SimpleLineIcons.arrow_left),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        actions: <Widget>[
           Switch(
             value: isSwitched,
             onChanged: (value) {
@@ -40,24 +39,25 @@ class _SettingsItemFocusedModeState extends State<SettingsItemFocusedMode> {
         title: Column(
           children: [
             Text(
-              "focus mode", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0),
+              "focus mode",
+              style: TextStyle(fontWeight: FontWeight.w300, fontSize: 30.0),
             ),
             GestureDetector(
-              child: Text('settings', style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20.0)),
+              child: Text('settings',
+                  style:
+                      TextStyle(fontWeight: FontWeight.w300, fontSize: 20.0)),
               onTap: () {},
             ),
           ],
         ),
       ),
       body: Column(
-        children:<Widget>[
+        children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top:20.0, left:20.0, right:20.0),
-            child: Text("focus mode disables extra clutter features like pinning and tags to give you a more focused space on your ideas and takes.")
-          ),
-          
+              padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
+              child: Text(
+                  "focus mode disables extra clutter features like pinning and tags to give you a more focused space on your ideas and takes.")),
         ],
-       
       ),
     );
   }

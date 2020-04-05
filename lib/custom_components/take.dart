@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_translate/flutter_translate.dart';
 
 class TakeCard extends StatelessWidget {
   createAlertDialog(BuildContext context) {
@@ -46,7 +44,6 @@ class TakeCard extends StatelessWidget {
               const ListTile(
                 title: Text(
                   '',
-                 
                 ),
               ),
               ButtonBar(
@@ -95,5 +92,4 @@ void choiceAction(String choice) {
   }
 
 // if (choice == Constants.Pin) {}
-} 
-
+}
