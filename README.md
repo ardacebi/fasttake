@@ -1,6 +1,6 @@
 <img src="/readme_assets/fasttake_repo.png" alt="fasttake logo" align="middle">
 
-An app to take notes of those that come up on your mind without waiting. Written in Dart using Flutter.
+An app to take notes of those that come up on your mind, without having to wait. Written in Dart using Flutter.
 
 [![Travis CI Build](https://img.shields.io/travis/com/ardacebi/fasttake?style=flat-square)](https://travis-ci.com/github/ardacebi/fasttake)
 ![License](https://img.shields.io/github/license/ardacebi/fasttake?style=flat-square)
@@ -9,6 +9,8 @@ An app to take notes of those that come up on your mind without waiting. Written
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+
 
 ### Current status
 
@@ -19,7 +21,7 @@ An app to take notes of those that come up on your mind without waiting. Written
 Important: Screenshots above are updated mostly every day and may subject to change when you build the app on your computer. Major and minor changes are done every day and every hour.
 
 ## Features
-The main idea and the function of the app is to documentate the ideas (and things) that come up on your mind instantly without forgetting them.
+The main idea and the function of the app is to document the ideas (and things) that come up on your mind instantly without forgetting them.
 
 Coming soon (after roadmap finishes)
 
