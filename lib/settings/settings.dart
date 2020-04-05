@@ -83,7 +83,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
           actions: <Widget>[]),
       body: new Column(
         children: <Widget>[
-          ListTile(
+         /* ListTile(
             leading: Icon(SimpleLineIcons.user),
             title: Text(
               (translate('settings.items.account')),
@@ -95,7 +95,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                 MaterialPageRoute(builder: (context) => SettingsItemAccount()),
               );
             },
-          ),
+          ), */
         /*  ListTile(
             leading: Icon(SimpleLineIcons.bell),
             title: Text(
