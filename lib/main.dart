@@ -49,8 +49,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.auth, this.onSignedOut, this.title})
+class MainRoute extends StatefulWidget {
+  MainRoute({Key key, this.auth, this.onSignedOut, this.title})
       : super(key: key);
   final BaseAuth auth;
   final VoidCallback onSignedOut;
@@ -76,10 +76,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _MainRouteState createState() => _MainRouteState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MainRouteState extends State<MainRoute> {
   @override
   Widget build(BuildContext context) {
     return null;
