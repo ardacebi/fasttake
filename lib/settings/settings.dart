@@ -96,7 +96,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
               );
             },
           ),
-          ListTile(
+        /*  ListTile(
             leading: Icon(SimpleLineIcons.bell),
             title: Text(
               (translate('settings.items.notifications')),
@@ -109,7 +109,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                     builder: (context) => SettingsItemNotifications()),
               );
             },
-          ),
+          ), */
           /*  ListTile(
             leading: Icon(SimpleLineIcons.bulb),
             title:
@@ -123,7 +123,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                       child: SettingsItemFocusedMode()));
             },
           ), */
-          ListTile(
+        /*  ListTile(
             leading: Icon(SimpleLineIcons.shield),
             title: Text((translate('settings.items.security'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
@@ -133,8 +133,8 @@ class _SettingsRouteState extends State<SettingsRoute> {
                 MaterialPageRoute(builder: (context) => SettingsItemSecurity()),
               );
             },
-          ),
-          ListTile(
+          ), */
+         /* ListTile(
             leading: Icon(SimpleLineIcons.magic_wand),
             title: Text((translate('settings.items.theme'))),
             trailing: Icon(SimpleLineIcons.arrow_right),
@@ -144,7 +144,7 @@ class _SettingsRouteState extends State<SettingsRoute> {
                 MaterialPageRoute(builder: (context) => SettingsItemTheme()),
               );
             },
-          ),
+          ), */
           ListTile(
             leading: Icon(SimpleLineIcons.globe),
             title: Text((translate('settings.items.language'))),
