@@ -236,6 +236,7 @@ fabric.properties
 .DS_Store
 .AppleDouble
 .LSOverride
+GoogleService-Info.plist
 
 # Icon must end with two \r
 Icon
@@ -887,3 +888,4 @@ DerivedData/
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
