@@ -23,7 +23,8 @@ Important: Screenshots above are updated mostly every day and may subject to cha
 ## Features
 The main idea and the function of the app is to document the ideas (and things) that come up on your mind instantly without forgetting them.
 
-Coming soon (after roadmap finishes)
+- Quickly save ideas that come up on your mind with only one tap.
+- 
 
 ## How to build and contribute
 
