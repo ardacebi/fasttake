@@ -1,4 +1,7 @@
 <img src="/readme_assets/fasttake_repo.png" alt="fasttake logo" align="middle">
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 An app to take notes of those that come up on your mind, without having to wait. Written in Dart using Flutter.
 
@@ -54,3 +57,22 @@ Thank you for your contributions!
 
 ## License
 fasttake is licensed under the GNU General Public License v3.0. [Learn more](https://github.com/ardacebi/fasttake/blob/master/LICENSE).
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.ardacebi.com"><img src="https://avatars3.githubusercontent.com/u/17576065?v=4" width="100px;" alt=""/><br /><sub><b>Arda Çebi</b></sub></a><br /><a href="https://github.com/ardacebi/fasttake/commits?author=ardacebi" title="Code">💻</a> <a href="#design-ardacebi" title="Design">🎨</a> <a href="#ideas-ardacebi" title="Ideas, Planning, & Feedback">🤔</a> <a href="#translation-ardacebi" title="Translation">🌍</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
