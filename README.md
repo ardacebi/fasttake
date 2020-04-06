@@ -1,7 +1,4 @@
 <img src="/readme_assets/fasttake_repo.png" alt="fasttake logo" align="middle">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 An app to take notes of those that come up on your mind, without having to wait. Written in Dart using Flutter.
 
@@ -9,8 +6,9 @@ An app to take notes of those that come up on your mind, without having to wait.
 ![License](https://img.shields.io/github/license/ardacebi/fasttake)
 ![stable](https://img.shields.io/github/v/release/ardacebi/fasttake?label=stable)
 ![Issues](https://img.shields.io/github/issues/ardacebi/fasttake)
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
-
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
 ### Current status
@@ -55,9 +53,6 @@ Thank you for your contributions!
 
 > ℹ️ Based on your contributions from the code, translation, design, idea or any suggestion side, you will be added to the contributors list below.
 
-## License
-fasttake is licensed under the GNU General Public License v3.0. [Learn more](https://github.com/ardacebi/fasttake/blob/master/LICENSE).
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -76,4 +71,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+## License
+fasttake is licensed under the GNU General Public License v3.0. [Learn more](https://github.com/ardacebi/fasttake/blob/master/LICENSE).
