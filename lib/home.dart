@@ -81,8 +81,8 @@ class HomeRoute extends StatelessWidget {
                 ),
               ),
               Container(
-                margin:
-                    const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0, top:10.0),
+                margin: const EdgeInsets.only(
+                    left: 20.0, right: 20.0, bottom: 10.0, top: 10.0),
                 child: Row(
                   children: <Widget>[
                     Expanded(
@@ -93,9 +93,7 @@ class HomeRoute extends StatelessWidget {
                           child: new OutlineButton(
                             shape: RoundedRectangleBorder(
                                 side: BorderSide(
-                                    color: Colors.blue,
-                                    width: 1,
-                                    style: BorderStyle.solid),
+                                    width: 2, style: BorderStyle.solid),
                                 borderRadius: BorderRadius.circular(10)),
                             child: Text(
                               translate('home.save'),
@@ -115,22 +113,20 @@ class HomeRoute extends StatelessWidget {
                     Expanded(
                       child: Container(
                         margin: const EdgeInsets.only(left: 5.0),
-                         child: SizedBox(
+                        child: SizedBox(
                           height: 48,
-                        child: new OutlineButton(
-                          shape: RoundedRectangleBorder(
-                              side: BorderSide(
-                                  color: Colors.blue,
-                                  width: 1,
-                                  style: BorderStyle.solid),
-                              borderRadius: BorderRadius.circular(10)),
-                          child: Text(
-                            translate('home.quick_save'),
-                            style: TextStyle(fontWeight: FontWeight.w400),
+                          child: new OutlineButton(
+                            shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                    width: 1, style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Text(
+                              translate('home.quick_save'),
+                              style: TextStyle(fontWeight: FontWeight.w400),
+                            ),
+                            onPressed: () {},
                           ),
-                          onPressed: () {},
                         ),
-                      ),
                       ),
                     ),
                   ],
