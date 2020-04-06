@@ -13,13 +13,13 @@ var uuid = Uuid();
 
 class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
   final fb = FirebaseDatabase.instance;
-  final myController = TextEditingController();
+  final feedbackFieldController = TextEditingController();
   final feedback = "feedback/" + uuid.v1();
   bool _validate = false;
 
   @override
   Widget build(BuildContext context) {
-    Future<void> _neverSatisfied() async {
+    Future<void> _triggerDialog() async {
       return showDialog<void>(
         context: context,
         barrierDismissible: true,
@@ -86,16 +86,22 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
             child: Container(
               margin: const EdgeInsets.only(bottom: 20.0),
               child: TextField(
-                controller: myController,
+                controller: feedbackFieldController,
                 maxLines: null,
                 minLines: 3,
                 textCapitalization: TextCapitalization.sentences,
                 decoration: InputDecoration(
                   prefixIcon: Icon(SimpleLineIcons.info),
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderSide: new BorderSide(width: 2),
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(12.0),
+                        ),
+                  ),
                   labelText: translate('settings_feedback.items.your_thoughts'),
                   errorText: _validate ? translate('settings_feedback.items.field_empty_error') : null,
                 ),
+                
               ),
             ),
           ),
@@ -120,14 +126,14 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
                 child: Text(translate('settings_feedback.items.send_feedback')),
                 onPressed: () {
                   setState(() {
-                    myController.text.isEmpty
+                    feedbackFieldController.text.isEmpty
                         ? _validate = true
                         : _validate = false;
                   });
                   if (_validate == false) {
-                    ref.child(feedback).set(myController.text);
+                    ref.child(feedback).set(feedbackFieldController.text);
                     Navigator.pop(context);
-                    _neverSatisfied();
+                    _triggerDialog();
                   }
                 },
               ),
@@ -141,7 +147,7 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
   @override
   void dispose() {
     // Clean up the controller when the widget is disposed.
-    myController.dispose();
+    feedbackFieldController.dispose();
     super.dispose();
   }
 }
