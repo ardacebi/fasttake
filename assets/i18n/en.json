@@ -10,7 +10,7 @@
             "email":"Email",
             "password": "Password",
             "forgotpass":"Forgot password?",
-            "login":"Login",
+            "login":"Log In",
             "signup":"Sign up",
             "login_long":"Already have an account? Log in.",
             "signup_long":"Don't have an account? Sign up."
@@ -83,7 +83,8 @@
             "description2": "All feedback sent from this page is anonymous and will be used to only improve the fasttake app.",
             "your_thoughts": "Your thoughts",
             "upload_attachments": "Upload attachments",
-            "send_feedback": "Send feedback"
+            "send_feedback": "Send feedback",
+            "field_empty_error":"Feedback field cannot be empty."
         }
     },
     "settings_share_with_friends": {

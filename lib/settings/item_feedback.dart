@@ -15,6 +15,7 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
   final fb = FirebaseDatabase.instance;
   final myController = TextEditingController();
   final feedback = "feedback/" + uuid.v1();
+  bool _validate = false;
 
   @override
   Widget build(BuildContext context) {
@@ -93,6 +94,7 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
                   prefixIcon: Icon(SimpleLineIcons.info),
                   border: OutlineInputBorder(),
                   labelText: translate('settings_feedback.items.your_thoughts'),
+                  errorText: _validate ? translate('settings_feedback.items.field_empty_error') : null,
                 ),
               ),
             ),
@@ -117,9 +119,16 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
               child: RaisedButton(
                 child: Text(translate('settings_feedback.items.send_feedback')),
                 onPressed: () {
-                  ref.child(feedback).set(myController.text);
-                  Navigator.pop(context);
-                  _neverSatisfied();
+                  setState(() {
+                    myController.text.isEmpty
+                        ? _validate = true
+                        : _validate = false;
+                  });
+                  if (_validate == false) {
+                    ref.child(feedback).set(myController.text);
+                    Navigator.pop(context);
+                    _neverSatisfied();
+                  }
                 },
               ),
             ),
