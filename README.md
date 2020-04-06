@@ -6,9 +6,7 @@ An app to take notes of those that come up on your mind, without having to wait.
 ![License](https://img.shields.io/github/license/ardacebi/fasttake)
 ![stable](https://img.shields.io/github/v/release/ardacebi/fasttake?label=stable)
 ![Issues](https://img.shields.io/github/issues/ardacebi/fasttake)
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
 
 
@@ -53,24 +51,6 @@ All contributions are welcome. You can follow the to-do's from the issues area o
 Thank you for your contributions!
 
 > ℹ️ Based on your contributions from the code, translation, design, idea or any suggestion side, you will be added to the contributors list below.
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://www.ardacebi.com"><img src="https://avatars3.githubusercontent.com/u/17576065?v=4" width="100px;" alt=""/><br /><sub><b>Arda Çebi</b></sub></a><br /><a href="https://github.com/ardacebi/fasttake/commits?author=ardacebi" title="Code">💻</a> <a href="#ideas-ardacebi" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-ardacebi" title="Design">🎨</a> <a href="#translation-ardacebi" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://baranonen.com"><img src="https://avatars1.githubusercontent.com/u/40770499?v=4" width="100px;" alt=""/><br /><sub><b>Baran Önen</b></sub></a><br /><a href="#ideas-baranonen" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-baranonen" title="Design">🎨</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## License
 fasttake is licensed under the GNU General Public License v3.0. [Learn more](https://github.com/ardacebi/fasttake/blob/master/LICENSE).
