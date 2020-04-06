@@ -71,3 +71,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## License
+fasttake is licensed under the GNU General Public License v3.0. [Learn more](https://github.com/ardacebi/fasttake/blob/master/LICENSE).
