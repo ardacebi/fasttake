@@ -3,10 +3,10 @@
 An app to take notes of those that come up on your mind, without having to wait. Written in Dart using Flutter.
 
 [![Codemagic build status](https://api.codemagic.io/apps/5e8adb3e64e0bdcde3e0c2a2/5e8adb3e64e0bdcde3e0c2a1/status_badge.svg)](https://codemagic.io/apps/5e8adb3e64e0bdcde3e0c2a2/5e8adb3e64e0bdcde3e0c2a1/latest_build)
-![License](https://img.shields.io/github/license/ardacebi/fasttake?style=flat-square)
-![stable](https://img.shields.io/github/v/release/ardacebi/fasttake?label=stable&style=flat-square)
-![Issues](https://img.shields.io/github/issues/ardacebi/fasttake?style=flat-square)
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+![License](https://img.shields.io/github/license/ardacebi/fasttake)
+![stable](https://img.shields.io/github/v/release/ardacebi/fasttake?label=stable)
+![Issues](https://img.shields.io/github/issues/ardacebi/fasttake)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
