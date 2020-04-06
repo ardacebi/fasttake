@@ -30,7 +30,7 @@ class TakeCard extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border.all(
           color: Colors.grey[500],
-          width: 2,
+          width: 1,
         ),
         borderRadius: BorderRadius.circular(12),
       ),

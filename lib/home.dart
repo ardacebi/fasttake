@@ -69,39 +69,61 @@ class HomeRoute extends StatelessWidget {
                     minLines: 5,
                     textCapitalization: TextCapitalization.sentences,
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                        borderSide: new BorderSide(width: 2),
+                        borderRadius: const BorderRadius.all(
+                          const Radius.circular(12.0),
+                        ),
+                      ),
                       hintText: translate('home.landing_label'),
                     ),
                   ),
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(
-                    left: 20.0, right: 20.0, bottom: 10.0),
+                margin:
+                    const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0, top:10.0),
                 child: Row(
                   children: <Widget>[
                     Expanded(
                       child: Container(
                         margin: const EdgeInsets.only(right: 5.0),
-                        child: new OutlineButton(
-                          child: Text(
-                            translate('home.save'),
-                            style: TextStyle(fontWeight: FontWeight.w400),
+                        child: SizedBox(
+                          height: 48,
+                          child: new OutlineButton(
+                            shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                    color: Colors.blue,
+                                    width: 1,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Text(
+                              translate('home.save'),
+                              style: TextStyle(fontWeight: FontWeight.w400),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => TakeDetailsRoute()),
+                              );
+                            },
                           ),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => TakeDetailsRoute()),
-                            );
-                          },
                         ),
                       ),
                     ),
                     Expanded(
                       child: Container(
                         margin: const EdgeInsets.only(left: 5.0),
+                         child: SizedBox(
+                          height: 48,
                         child: new OutlineButton(
+                          shape: RoundedRectangleBorder(
+                              side: BorderSide(
+                                  color: Colors.blue,
+                                  width: 1,
+                                  style: BorderStyle.solid),
+                              borderRadius: BorderRadius.circular(10)),
                           child: Text(
                             translate('home.quick_save'),
                             style: TextStyle(fontWeight: FontWeight.w400),
@@ -109,25 +131,56 @@ class HomeRoute extends StatelessWidget {
                           onPressed: () {},
                         ),
                       ),
+                      ),
                     ),
-                    OutlineButton(
-                        child: Text(
-                          "Sign out",
-                          style: TextStyle(fontWeight: FontWeight.w400),
-                        ),
-                        onPressed: _signOut),
-                    OutlineButton(
-                        child: Text(
-                          "Settings",
-                          style: TextStyle(fontWeight: FontWeight.w400),
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => SettingsRoute()),
-                          );
-                        }),
+                  ],
+                ),
+              ),
+              Container(
+                margin:
+                    const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 0.0),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: Container(
+                        margin: const EdgeInsets.only(right: 5.0),
+                        child: new OutlineButton(
+                            shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                    color: Colors.blue,
+                                    width: 1,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(50)),
+                            child: Text(
+                              "Settings",
+                              style: TextStyle(fontWeight: FontWeight.w400),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SettingsRoute()),
+                              );
+                            }),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin: const EdgeInsets.only(left: 5.0),
+                        child: new OutlineButton(
+                            shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                    color: Colors.blue,
+                                    width: 1,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(50)),
+                            child: Text(
+                              "Sign out",
+                              style: TextStyle(fontWeight: FontWeight.w400),
+                            ),
+                            onPressed: _signOut),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -135,35 +188,35 @@ class HomeRoute extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     margin: const EdgeInsets.only(
-                        left: 25.0, right: 25.0, top: 10.0),
+                        left: 20.0, right: 20.0, top: 15.0),
                     child: TextField(
                       decoration: customSearch,
                     ),
                   ),
                   Container(
                     margin: const EdgeInsets.only(
-                        left: 25.0, right: 25.0, top: 20.0),
+                        left: 30.0, right: 30.0, top: 20.0),
                     child: TakeCard(
                       onPressed: () {},
                     ),
                   ),
                   Container(
                     margin: const EdgeInsets.only(
-                        left: 25.0, right: 25.0, top: 20.0),
+                        left: 30.0, right: 30.0, top: 20.0),
                     child: TakeCard(
                       onPressed: () {},
                     ),
                   ),
                   Container(
                     margin: const EdgeInsets.only(
-                        left: 25.0, right: 25.0, top: 20.0),
+                        left: 30.0, right: 30.0, top: 20.0),
                     child: TakeCard(
                       onPressed: () {},
                     ),
                   ),
                   Container(
                     margin: const EdgeInsets.only(
-                        left: 25.0, right: 25.0, top: 20.0),
+                        left: 30.0, right: 30.0, top: 20.0),
                     child: TakeCard(
                       onPressed: () {},
                     ),
