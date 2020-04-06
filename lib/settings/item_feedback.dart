@@ -1,3 +1,4 @@
+import 'package:fasttake/custom_widgets/button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:flutter_translate/flutter_translate.dart';
@@ -120,11 +121,10 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
             ),*/
           Padding(
             padding: EdgeInsets.only(left: 20.0, right: 20.0),
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(minWidth: double.infinity),
-              child: RaisedButton(
-                child: Text(translate('settings_feedback.items.send_feedback')),
-                onPressed: () {
+            child: Column( 
+               children: <Widget>[
+            fastButton(
+              onPressed: () {
                   setState(() {
                     feedbackFieldController.text.isEmpty
                         ? _validate = true
@@ -136,7 +136,8 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
                     _triggerDialog();
                   }
                 },
-              ),
+            ),
+          ],
             ),
           ),
         ],

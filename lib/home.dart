@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'auth.dart';
 import 'package:fasttake/settings/settings.dart';
 import 'package:fasttake/take_details.dart';
-import 'custom_components/search.dart';
-import 'custom_components/take.dart';
+import 'custom_widgets/search.dart';
+import 'custom_widgets/take.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 
