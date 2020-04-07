@@ -10,8 +10,11 @@ abstract class BaseAuth {
   Future<bool> loginWithGoogle();
 }
 
+
 class Auth implements BaseAuth {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+
+  
 
   Future<String> signInWithEmailAndPassword(
       String email, String password) async {
@@ -38,26 +41,26 @@ class Auth implements BaseAuth {
     return _firebaseAuth.signOut();
   }
 
-   Future<bool> loginWithGoogle() async {
+  Future<bool> loginWithGoogle() async {
     try {
       GoogleSignIn googleSignIn = GoogleSignIn();
       GoogleSignInAccount account = await googleSignIn.signIn();
-      if(account == null )
-        return false;
-      AuthResult res = await _firebaseAuth.signInWithCredential(GoogleAuthProvider.getCredential(
+      if (account == null) return false;
+      AuthResult res = await _firebaseAuth
+          .signInWithCredential(GoogleAuthProvider.getCredential(
         idToken: (await account.authentication).idToken,
         accessToken: (await account.authentication).accessToken,
       ));
-      
-      if(res.user == null)
-        return false;
+
+      if (res.user == null) return false;
       return true;
     } catch (e) {
       print(e.message);
       print("Error logging with google");
       return false;
     }
-    
   }
+
+ 
 
 }

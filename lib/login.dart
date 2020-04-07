@@ -4,7 +4,6 @@ import 'package:flutter_translate/flutter_translate.dart';
 import 'auth.dart';
 import 'package:fasttake/auth.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
-
 class LoginRoute extends StatefulWidget {
   LoginRoute({this.auth, this.onSignedIn});
   final BaseAuth auth;

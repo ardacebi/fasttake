@@ -1,4 +1,4 @@
-package com.example.fasttake
+package com.ardacebi.fasttake
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
