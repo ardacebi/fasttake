@@ -36,7 +36,12 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                   textCapitalization: TextCapitalization.sentences,
                   decoration: InputDecoration(
                     prefixIcon: Icon(SimpleLineIcons.info),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderSide: new BorderSide(width: 2),
+                      borderRadius: const BorderRadius.all(
+                        const Radius.circular(12.0),
+                      ),
+                    ),
                     labelText: translate('new_take_text_details.subject'),
                   ),
                 ),
@@ -46,7 +51,12 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                 child: TextField(
                   decoration: InputDecoration(
                     prefixIcon: Icon(SimpleLineIcons.tag),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderSide: new BorderSide(width: 2),
+                      borderRadius: const BorderRadius.all(
+                        const Radius.circular(12.0),
+                      ),
+                    ),
                     labelText: translate('new_take_text_details.tags'),
                   ),
                 ),
@@ -83,6 +93,10 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                     child: Container(
                       margin: const EdgeInsets.only(right: 5.0),
                       child: OutlineButton.icon(
+                        shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                    width: 2, style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(10)),
                         onPressed: () {
                           Future<DateTime> selectedDate = showDatePicker(
                             context: context,
@@ -101,6 +115,10 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                     child: Container(
                       margin: const EdgeInsets.only(left: 5.0),
                       child: OutlineButton.icon(
+                        shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                    width: 2, style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(10)),
                         onPressed: () {
                           Future<TimeOfDay> selectedTime = showTimePicker(
                             initialTime: TimeOfDay.now(),
