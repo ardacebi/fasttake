@@ -11,7 +11,6 @@ An app to take notes of those that come up on your mind, without having to wait.
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
-
 ### Current status
 
  Home | Take Editor | Take Details | Settings |
@@ -63,8 +62,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://www.ardacebi.com"><img src="https://avatars3.githubusercontent.com/u/17576065?v=4" width="100px;" alt=""/><br /><sub><b>Arda Çebi</b></sub></a><br /><a href="https://github.com/ardacebi/fasttake/commits?author=ardacebi" title="Code">💻</a> <a href="#ideas-ardacebi" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-ardacebi" title="Design">🎨</a> <a href="#translation-ardacebi" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://baranonen.com"><img src="https://avatars1.githubusercontent.com/u/40770499?v=4" width="100px;" alt=""/><br /><sub><b>Baran Önen</b></sub></a><br /><a href="#ideas-baranonen" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-baranonen" title="Design">🎨</a></td>
+    <td align="center"><a href="https://www.ardacebi.com"><img src="https://avatars3.githubusercontent.com/u/17576065?v=4" width="100px;" alt=""/><br /><sub><b>Arda Çebi</b></sub></a><br /><a href="https://github.com/ardacebi/fasttake/commits?author=ardacebi" title="Code">💻</a> <a href="#design-ardacebi" title="Design">🎨</a> <a href="#ideas-ardacebi" title="Ideas, Planning, & Feedback">🤔</a> <a href="#translation-ardacebi" title="Translation">🌍</a></td>
+    <td align="center"><a href="http://baranonen.com"><img src="https://avatars1.githubusercontent.com/u/40770499?v=4" width="100px;" alt=""/><br /><sub><b>Baran Önen</b></sub></a><br /><a href="#ideas-baranonen" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
