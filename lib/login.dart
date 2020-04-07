@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'auth.dart';
-
+import 'package:fasttake/auth.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class LoginRoute extends StatefulWidget {
@@ -85,8 +85,10 @@ class _LoginRouteState extends State<LoginRoute> {
                 margin: EdgeInsets.only(right: 20.0, left: 20.0),
                 child: Form(
                   key: formKey,
-                  child: new Column(
-                    children: buildInputs() + buildSubmitButtons(),
+                  child: new SingleChildScrollView(
+                    child: new Column(
+                      children: buildInputs() + buildSubmitButtons(),
+                    ),
                   ),
                 ),
               ),
@@ -235,7 +237,10 @@ class _LoginRouteState extends State<LoginRoute> {
               Container(
                   child: SignInButton(
                 Buttons.Google,
-                onPressed: () {},
+                onPressed: () async {
+                  bool res = await Auth().loginWithGoogle();
+                  if (!res) print("Error logging in with Google");
+                },
               )),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -292,7 +297,7 @@ class _LoginRouteState extends State<LoginRoute> {
             ),
           ),
         ),
-         Padding(
+        Padding(
           padding: EdgeInsets.only(top: 10.0),
           child: Container(
             child: Padding(
