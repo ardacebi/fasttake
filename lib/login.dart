@@ -315,6 +315,7 @@ class _LoginRouteState extends State<LoginRoute> {
               Container(
                   child: SignInButton(
                 Buttons.Google,
+                text: "Sign up with Google",
                 onPressed: () {},
               )),
               Row(
