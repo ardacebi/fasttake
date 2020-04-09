@@ -11,7 +11,7 @@
             "password": "Password",
             "forgotpass":"Forgot password?",
             "login":"Log In",
-            "signup":"Sign up",
+            "signup":"Sign Up",
             "login_long":"Already have an account? Log in.",
             "signup_long":"Don't have an account? Sign up."
         },
