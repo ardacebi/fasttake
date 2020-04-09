@@ -31,7 +31,6 @@ class MyApp extends StatelessWidget {
           darkTheme: ThemeData(
             brightness: Brightness.dark,
             splashColor: Colors.transparent,
-            highlightColor: Colors.transparent,
             primarySwatch: Colors.grey,
             accentColor: Colors.grey,
             cardColor: Colors.grey[850],
@@ -40,7 +39,6 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             splashColor: Colors.transparent,
             cardColor: Colors.grey[50],
-            highlightColor: Colors.transparent,
             primarySwatch: Colors.grey,
             fontFamily: 'JosefinSans',
           ),

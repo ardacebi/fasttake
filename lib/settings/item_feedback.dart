@@ -95,18 +95,19 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
                   prefixIcon: Icon(SimpleLineIcons.info),
                   border: OutlineInputBorder(
                     borderSide: new BorderSide(width: 2),
-                        borderRadius: const BorderRadius.all(
-                          const Radius.circular(12.0),
-                        ),
+                    borderRadius: const BorderRadius.all(
+                      const Radius.circular(12.0),
+                    ),
                   ),
                   labelText: translate('settings_feedback.items.your_thoughts'),
-                  errorText: _validate ? translate('settings_feedback.items.field_empty_error') : null,
+                  errorText: _validate
+                      ? translate('settings_feedback.items.field_empty_error')
+                      : null,
                 ),
-                
               ),
             ),
           ),
-          
+
           /*new Padding(
               padding: new EdgeInsets.only(top: 0.0, bottom:15.0, left:60.0, right:60.0),
               child: ConstrainedBox(
@@ -122,23 +123,33 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
             ),*/
           Padding(
             padding: EdgeInsets.only(left: 20.0, right: 20.0),
-            child: Column( 
-               children: <Widget>[
-            RaisedButton(
-              onPressed: () {
-                  setState(() {
-                    feedbackFieldController.text.isEmpty
-                        ? _validate = true
-                        : _validate = false;
-                  });
-                  if (_validate == false) {
-                    ref.child(feedback).set(feedbackFieldController.text);
-                    Navigator.pop(context);
-                    _triggerDialog();
-                  }
-                },
-            ),
-          ],
+            child: Column(
+              children: <Widget>[
+                ConstrainedBox(
+                  constraints: const BoxConstraints(minWidth: double.infinity),
+                  child: ButtonTheme(
+                    splashColor: Colors.transparent,
+                    height: 45.0,
+                    child: OutlineButton(
+                      child: Text("Send feedback"),
+                      shape: new RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(10.0)),
+                      onPressed: () {
+                        setState(() {
+                          feedbackFieldController.text.isEmpty
+                              ? _validate = true
+                              : _validate = false;
+                        });
+                        if (_validate == false) {
+                          ref.child(feedback).set(feedbackFieldController.text);
+                          Navigator.pop(context);
+                          _triggerDialog();
+                        }
+                      },
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
