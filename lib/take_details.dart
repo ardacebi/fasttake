@@ -94,9 +94,9 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                       margin: const EdgeInsets.only(right: 5.0),
                       child: OutlineButton.icon(
                         shape: RoundedRectangleBorder(
-                                side: BorderSide(
-                                    width: 2, style: BorderStyle.solid),
-                                borderRadius: BorderRadius.circular(10)),
+                            side:
+                                BorderSide(width: 2, style: BorderStyle.solid),
+                            borderRadius: BorderRadius.circular(10)),
                         onPressed: () {
                           Future<DateTime> selectedDate = showDatePicker(
                             context: context,
@@ -116,9 +116,9 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                       margin: const EdgeInsets.only(left: 5.0),
                       child: OutlineButton.icon(
                         shape: RoundedRectangleBorder(
-                                side: BorderSide(
-                                    width: 2, style: BorderStyle.solid),
-                                borderRadius: BorderRadius.circular(10)),
+                            side:
+                                BorderSide(width: 2, style: BorderStyle.solid),
+                            borderRadius: BorderRadius.circular(10)),
                         onPressed: () {
                           Future<TimeOfDay> selectedTime = showTimePicker(
                             initialTime: TimeOfDay.now(),
@@ -133,11 +133,27 @@ class _TakeDetailsRouteState extends State<TakeDetailsRoute> {
                   ),
                 ],
               ),
-              ConstrainedBox(
-                constraints: const BoxConstraints(minWidth: double.infinity),
-                child: RaisedButton(
-                  child: Text(translate('new_take_text_details.save_take')),
-                  onPressed: () {},
+              Padding(
+                padding: EdgeInsets.only(bottom: 0.0, top: 0.0),
+                child: Container(
+                  margin: EdgeInsets.only(top: 10.0),
+                  child: ConstrainedBox(
+                    constraints:
+                        const BoxConstraints(minWidth: double.infinity),
+                    child: ButtonTheme(
+                      splashColor: Colors.transparent,
+                      height: 45.0,
+                      child: RaisedButton(
+                        child:
+                            Text(translate('new_take_text_details.save_take')),
+                        color: Colors.grey[900],
+                        textColor: Colors.white,
+                        shape: new RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(10.0)),
+                        onPressed: () {},
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],
