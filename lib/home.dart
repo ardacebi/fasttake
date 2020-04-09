@@ -65,8 +65,9 @@ class HomeRoute extends StatelessWidget {
                 child: Container(
                   margin: const EdgeInsets.only(bottom: 10.0),
                   child: TextField(
+                    style: TextStyle(height: 1.3),
                     maxLines: null,
-                    minLines: 5,
+                    minLines: 3,
                     textCapitalization: TextCapitalization.sentences,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
