@@ -46,7 +46,34 @@ class _LoginRouteState extends State<LoginRoute> {
         }
         widget.onSignedIn();
       } catch (e) {
-        print('Error: $e');
+        Future<void> _triggerDialog() async {
+          return showDialog<void>(
+            context: context,
+            barrierDismissible: true,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: Text('Authentication Error'),
+                content: SingleChildScrollView(
+                  child: ListBody(
+                    children: <Widget>[
+                      Text('$e'),
+                    ],
+                  ),
+                ),
+                actions: <Widget>[
+                  FlatButton(
+                    child: Text('DISMISS'),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],
+              );
+            },
+          );
+        }
+
+        _triggerDialog();
       }
     }
   }
@@ -257,7 +284,36 @@ class _LoginRouteState extends State<LoginRoute> {
                 Buttons.Google,
                 onPressed: () async {
                   bool res = await Auth().loginWithGoogle();
-                  if (!res) print("Error logging in with Google");
+                  if (!res) {
+                    Future<void> _triggerDialog2() async {
+                      return showDialog<void>(
+                        context: context,
+                        barrierDismissible: true,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text('Authentication Error'),
+                            content: SingleChildScrollView(
+                              child: ListBody(
+                                children: <Widget>[
+                                  Text('Error logging in with Google.'),
+                                ],
+                              ),
+                            ),
+                            actions: <Widget>[
+                              FlatButton(
+                                child: Text('DISMISS'),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    }
+
+                    _triggerDialog2();
+                  }
                 },
               )),
               Row(
