@@ -4,6 +4,7 @@ import 'package:flutter_translate/flutter_translate.dart';
 import 'auth.dart';
 import 'package:fasttake/auth.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+
 class LoginRoute extends StatefulWidget {
   LoginRoute({this.auth, this.onSignedIn});
   final BaseAuth auth;
@@ -177,29 +178,43 @@ class _LoginRouteState extends State<LoginRoute> {
   List<Widget> buildSubmitButtons() {
     if (_formType == Formtype.login) {
       return [
-        Container(
-          margin: EdgeInsets.only(top: 10.0),
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(minWidth: double.infinity),
-            child: new RaisedButton(
-              child: Text(
-                translate('login.login'),
-                style: TextStyle(fontWeight: FontWeight.w400),
+        Padding(
+          padding: EdgeInsets.only(bottom: 7.0, top: 5.0),
+          child: Container(
+            margin: EdgeInsets.only(top: 10.0),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(minWidth: double.infinity),
+              child: ButtonTheme(
+                splashColor: Colors.transparent,
+                height: 45.0,
+                child: RaisedButton(
+                  child: Text(translate('login.login')),
+                  color: Colors.grey[900],
+                  textColor: Colors.white,
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(10.0)),
+                  onPressed: validateAndSubmit,
+                ),
               ),
-              onPressed: validateAndSubmit,
             ),
           ),
         ),
-        Container(
-          margin: EdgeInsets.only(top: 0.0),
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(minWidth: double.infinity),
-            child: new OutlineButton(
-              child: Text(
-                translate('login.signup_long'),
-                style: TextStyle(fontWeight: FontWeight.w400),
+        Padding(
+          padding: EdgeInsets.only(bottom: 5.0),
+          child: Container(
+            margin: EdgeInsets.only(top: 0.0),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(minWidth: double.infinity),
+              child: ButtonTheme(
+                splashColor: Colors.transparent,
+                height: 45.0,
+                child: OutlineButton(
+                  child: Text(translate('login.signup_long')),
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(10.0)),
+                  onPressed: moveToRegister,
+                ),
               ),
-              onPressed: moveToRegister,
             ),
           ),
         ),
@@ -274,29 +289,43 @@ class _LoginRouteState extends State<LoginRoute> {
       ];
     } else {
       return [
-        Container(
-          margin: EdgeInsets.only(top: 10.0),
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(minWidth: double.infinity),
-            child: new RaisedButton(
-              child: Text(
-                translate('login.signup'),
-                style: TextStyle(fontWeight: FontWeight.w400),
+        Padding(
+          padding: EdgeInsets.only(bottom: 7.0, top: 5.0),
+          child: Container(
+            margin: EdgeInsets.only(top: 10.0),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(minWidth: double.infinity),
+              child: ButtonTheme(
+                splashColor: Colors.transparent,
+                height: 45.0,
+                child: RaisedButton(
+                  child: Text(translate('login.signup')),
+                  color: Colors.grey[900],
+                  textColor: Colors.white,
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(10.0)),
+                  onPressed: validateAndSubmit,
+                ),
               ),
-              onPressed: validateAndSubmit,
             ),
           ),
         ),
-        Container(
-          margin: EdgeInsets.only(top: 0.0),
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(minWidth: double.infinity),
-            child: new OutlineButton(
-              child: Text(
-                translate('login.login_long'),
-                style: TextStyle(fontWeight: FontWeight.w400),
+        Padding(
+          padding: EdgeInsets.only(bottom: 5.0),
+          child: Container(
+            margin: EdgeInsets.only(top: 0.0),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(minWidth: double.infinity),
+              child: ButtonTheme(
+                splashColor: Colors.transparent,
+                height: 45.0,
+                child: OutlineButton(
+                  child: Text(translate('login.login_long')),
+                  shape: new RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(10.0)),
+                  onPressed: moveToLogin,
+                ),
               ),
-              onPressed: moveToLogin,
             ),
           ),
         ),
@@ -341,7 +370,7 @@ class _LoginRouteState extends State<LoginRoute> {
                     mini: true,
                     onPressed: () {},
                   )),
-                /*  Container(
+                  /*  Container(
                       child: SignInButton(
                     Buttons.Apple,
                     mini: true,
