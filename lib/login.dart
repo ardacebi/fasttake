@@ -13,7 +13,7 @@ class LoginRoute extends StatefulWidget {
   _LoginRouteState createState() => _LoginRouteState();
 }
 
-enum Formtype { login, register }
+enum Formtype { login, register, reset }
 
 class _LoginRouteState extends State<LoginRoute> {
   final formKey = new GlobalKey<FormState>();
@@ -210,7 +210,11 @@ class _LoginRouteState extends State<LoginRoute> {
               translate('login.forgotpass'),
               style: TextStyle(fontWeight: FontWeight.w400),
             ),
-            onPressed: () {},
+            onPressed: () {
+              setState(() {
+                _formType = Formtype.reset;
+              });
+            },
           ),
         ),
         Padding(
@@ -256,12 +260,12 @@ class _LoginRouteState extends State<LoginRoute> {
                     mini: true,
                     onPressed: () {},
                   )),
-                  Container(
+                  /* Container(
                       child: SignInButton(
                     Buttons.Apple,
                     mini: true,
                     onPressed: () {},
-                  )),
+                  )), */
                 ],
               ),
             ],
@@ -337,12 +341,12 @@ class _LoginRouteState extends State<LoginRoute> {
                     mini: true,
                     onPressed: () {},
                   )),
-                  Container(
+                /*  Container(
                       child: SignInButton(
                     Buttons.Apple,
                     mini: true,
                     onPressed: () {},
-                  )),
+                  )), */
                 ],
               ),
             ],
