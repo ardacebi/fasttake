@@ -56,7 +56,7 @@ class Auth implements BaseAuth {
       return true;
     } catch (e) {
       print(e.message);
-      print("Error logging with google");
+      print("Error logging with Google");
       return false;
     }
   }
