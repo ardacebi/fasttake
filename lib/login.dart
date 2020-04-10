@@ -132,7 +132,7 @@ class _LoginRouteState extends State<LoginRoute> {
         Container(
           margin: EdgeInsets.only(top: 0.0, bottom: 20.0),
           child: Text(
-            "Log in",
+            translate('login.login'),
             style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.w200),
           ),
         ),
@@ -178,7 +178,7 @@ class _LoginRouteState extends State<LoginRoute> {
         Container(
           margin: EdgeInsets.only(top: 0.0, bottom: 20.0),
           child: Text(
-            "Sign up",
+            translate('login.signup'),
             style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.w200),
           ),
         ),
@@ -302,6 +302,7 @@ class _LoginRouteState extends State<LoginRoute> {
               Container(
                   child: SignInButton(
                 Buttons.Google,
+                text: translate('login.google_login'),
                 onPressed: () async {
                   bool res = await Auth().loginWithGoogle();
                   if (!res) {
@@ -428,8 +429,40 @@ class _LoginRouteState extends State<LoginRoute> {
               Container(
                   child: SignInButton(
                 Buttons.Google,
-                text: "Sign up with Google",
-                onPressed: () {},
+                text: translate('login.google_signup'),
+                onPressed: () async {
+                  bool res = await Auth().loginWithGoogle();
+                  if (!res) {
+                    Future<void> _triggerDialog3() async {
+                      return showDialog<void>(
+                        context: context,
+                        barrierDismissible: true,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text('Authentication Error'),
+                            content: SingleChildScrollView(
+                              child: ListBody(
+                                children: <Widget>[
+                                  Text('Error logging in with Google.'),
+                                ],
+                              ),
+                            ),
+                            actions: <Widget>[
+                              FlatButton(
+                                child: Text('DISMISS'),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    }
+
+                    _triggerDialog3();
+                  }
+                },
               )),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

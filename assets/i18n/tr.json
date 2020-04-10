@@ -2,7 +2,22 @@
     "home": {
         "landing_label":"Aklında ne var?",
         "save": "Kaydet",
-        "quick_save": "Hızlı kaydet"
+        "quick_save": "Hızlı kaydet",
+        "search_bar": "Notlarda ara",
+        "settings": "Ayarlar",
+        "sign_out": "Çıkış Yap"
+    },
+    "login": {
+        "username":"Kullanıcı adı",
+        "email":"E-posta",
+        "password": "Parola",
+        "forgotpass":"Parolanı mı unuttun?",
+        "login":"Giriş Yap",
+        "signup":"Kayıt Ol",
+        "login_long":"Zaten hesabın mı var? Giriş yap.",
+        "signup_long":"Hesabın yok mu? Kayıt ol.",
+        "google_login": "Google ile giriş yap",
+        "google_signup": "Google ile kayıt ol"
     },
     "new_take_text": {
         "title": "yeni not",
@@ -15,7 +30,7 @@
         "reminders": "hat\u0131rlat\u0131c\u0131lar",
         "set_date": "Tarih ayarla",
         "set_time": "Zaman ayarla",
-        "save_take": "Notu kaydet"
+        "save_take": "Kaydet"
     },
     "settings": {
         "title": "ayarlar",
@@ -25,7 +40,8 @@
             "theme": "Tema",
             "language": "Dil",
             "feedback": "Geri bildirim",
-            "share_with_friends": "Arkada\u015flar\u0131nla payla\u015f"
+            "share_with_friends": "Arkada\u015flar\u0131nla payla\u015f",
+            "sign_out": "Çıkış yap"
         }
     },
     "settings_notifications": {

@@ -6,6 +6,7 @@ import 'custom_widgets/search.dart';
 import 'custom_widgets/take.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_translate/flutter_translate.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class HomeRoute extends StatelessWidget {
   HomeRoute({Key key, this.auth, this.onSignedOut, this.title})
@@ -149,7 +150,7 @@ class HomeRoute extends StatelessWidget {
                                     style: BorderStyle.solid),
                                 borderRadius: BorderRadius.circular(50)),
                             child: Text(
-                              "Settings",
+                              translate('home.settings'),
                               style: TextStyle(fontWeight: FontWeight.w400),
                             ),
                             onPressed: () {
@@ -172,7 +173,7 @@ class HomeRoute extends StatelessWidget {
                                     style: BorderStyle.solid),
                                 borderRadius: BorderRadius.circular(50)),
                             child: Text(
-                              "Sign out",
+                              translate('home.sign_out'),
                               style: TextStyle(fontWeight: FontWeight.w400),
                             ),
                             onPressed: _signOut),
@@ -187,7 +188,16 @@ class HomeRoute extends StatelessWidget {
                     margin: const EdgeInsets.only(
                         left: 20.0, right: 20.0, top: 15.0),
                     child: TextField(
-                      decoration: customSearch,
+                      decoration: InputDecoration(
+                        hintText: translate(('home.search_bar')),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50.0),
+                        ),
+                        filled: true,
+                        prefixIcon: Icon(
+                          SimpleLineIcons.magnifier,
+                        ),
+                      ),
                     ),
                   ),
                   Container(

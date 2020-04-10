@@ -1,23 +1,24 @@
 {
     "home": {
-        "search_bar": {
-            "label": "search takes"
-        },
-        "card": {
-            "dot_menu_delete": "delete",
-            "dot_menu_pin": "pin"
-        },
-        "new_take_area": {
-            "new_take_title": "new take"
-        },
-        "settings_button": {
-            "settings_button": "settings"
-        }
+        "landing_label":"What's on your mind?",
+        "save": "Save",
+        "quick_save": "Quick save",
+        "search_bar": "Search takes",
+        "settings": "Settings",
+        "sign_out": "Sign out"
     },
-    "new_take_text": {
-        "title": "new take",
-        "done": "done"
-    },
+        "login": {
+            "username":"Username",
+            "email":"Email",
+            "password": "Password",
+            "forgotpass":"Forgot password?",
+            "login":"Log In",
+            "signup":"Sign Up",
+            "login_long":"Already have an account? Log in.",
+            "signup_long":"Don't have an account? Sign up.",
+            "google_login": "Sign in with Google",
+            "google_signup": "Sign up with Google"
+        },
     "new_take_text_details": {
         "title": "details",
         "subject": "subject",
@@ -30,12 +31,20 @@
     "settings": {
         "title": "settings",
         "items": {
+            "account": "Account",
             "notifications": "Notifications",
             "security": "Security",
             "theme": "Theme",
             "language": "Language",
             "feedback": "Feedback",
-            "share_with_friends": "Share with friends"
+            "share_with_friends": "Share with friends",
+            "sign_out": "Sign out"
+        }
+    },
+    "settings_account": {
+        "title": "account",
+        "subtitle": "settings",
+        "items": {
         }
     },
     "settings_notifications": {
@@ -78,7 +87,8 @@
             "description2": "All feedback sent from this page is anonymous and will be used to only improve the fasttake app.",
             "your_thoughts": "Your thoughts",
             "upload_attachments": "Upload attachments",
-            "send_feedback": "Send feedback"
+            "send_feedback": "Send feedback",
+            "field_empty_error":"Feedback field cannot be empty."
         }
     },
     "settings_share_with_friends": {

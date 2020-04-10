@@ -1,20 +1,30 @@
 {
     "home": {
-        "landing_label":"What's on your mind?",
+        "landing_label": "What's on your mind?",
         "save": "Save",
         "quick_save": "Quick save",
-        "search_bar": "Search takes"
+        "search_bar": "Search takes",
+        "settings": "Settings",
+        "sign_out": "Sign out"
     },
-        "login": {
-            "username":"Username",
-            "email":"Email",
-            "password": "Password",
-            "forgotpass":"Forgot password?",
-            "login":"Log In",
-            "signup":"Sign Up",
-            "login_long":"Already have an account? Log in.",
-            "signup_long":"Don't have an account? Sign up."
-        },
+    "login": {
+        "username": "Username",
+        "email": "Email",
+        "password": "Password",
+        "forgotpass": "Forgot password?",
+        "login": "Log In",
+        "signup": "Sign Up",
+        "login_long": "Already have an account? Log in.",
+        "signup_long": "Don't have an account? Sign up.",
+        "google_login": "Sign in with Google",
+        "google_signup": "Sign up with Google"
+    },
+    "take": {
+        "delete": "Delete",
+        "pin": "Pin",
+        "cancel": "Cancel",
+        "delete_dialog": "Delete take?"
+    },
     "new_take_text_details": {
         "title": "details",
         "subject": "subject",
@@ -40,8 +50,7 @@
     "settings_account": {
         "title": "account",
         "subtitle": "settings",
-        "items": {
-        }
+        "items": {}
     },
     "settings_notifications": {
         "title": "notifications",
@@ -84,7 +93,7 @@
             "your_thoughts": "Your thoughts",
             "upload_attachments": "Upload attachments",
             "send_feedback": "Send feedback",
-            "field_empty_error":"Feedback field cannot be empty."
+            "field_empty_error": "Feedback field cannot be empty."
         }
     },
     "settings_share_with_friends": {

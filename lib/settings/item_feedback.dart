@@ -130,7 +130,7 @@ class _SettingsItemFeedbackState extends State<SettingsItemFeedback> {
                     splashColor: Colors.transparent,
                     height: 45.0,
                     child: OutlineButton(
-                      child: Text("Send feedback"),
+                      child: Text(translate('settings_feedback.items.send_feedback')),
                       shape: new RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(10.0)),
                       onPressed: () {
