@@ -144,7 +144,12 @@ class _LoginRouteState extends State<LoginRoute> {
             onSaved: (value) => _email = value,
             decoration: InputDecoration(
               prefixIcon: Icon(SimpleLineIcons.user),
-              border: OutlineInputBorder(),
+              border: OutlineInputBorder(
+                borderSide: new BorderSide(width: 2),
+                borderRadius: const BorderRadius.all(
+                  const Radius.circular(12.0),
+                ),
+              ),
               labelText: translate('login.email'),
             ),
           ),
@@ -157,7 +162,12 @@ class _LoginRouteState extends State<LoginRoute> {
             obscureText: true,
             decoration: InputDecoration(
               prefixIcon: Icon(SimpleLineIcons.key),
-              border: OutlineInputBorder(),
+              border: OutlineInputBorder(
+                borderSide: new BorderSide(width: 2),
+                borderRadius: const BorderRadius.all(
+                  const Radius.circular(12.0),
+                ),
+              ),
               labelText: translate('login.password'),
             ),
           ),
@@ -180,7 +190,12 @@ class _LoginRouteState extends State<LoginRoute> {
             onSaved: (value) => _email = value,
             decoration: InputDecoration(
               prefixIcon: Icon(SimpleLineIcons.user),
-              border: OutlineInputBorder(),
+              border: OutlineInputBorder(
+                borderSide: new BorderSide(width: 2),
+                borderRadius: const BorderRadius.all(
+                  const Radius.circular(12.0),
+                ),
+              ),
               labelText: translate('login.email'),
             ),
           ),
@@ -193,7 +208,12 @@ class _LoginRouteState extends State<LoginRoute> {
             obscureText: true,
             decoration: InputDecoration(
               prefixIcon: Icon(SimpleLineIcons.key),
-              border: OutlineInputBorder(),
+              border: OutlineInputBorder(
+                borderSide: new BorderSide(width: 2),
+                borderRadius: const BorderRadius.all(
+                  const Radius.circular(12.0),
+                ),
+              ),
               labelText: translate('login.password'),
             ),
           ),
