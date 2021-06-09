@@ -32,7 +32,7 @@ The main idea and the function of the app is to document the ideas (and things) 
 - **💻 Computer client:** Access all your takes from your computer with the computer client (requires fasttake account which can be created from the login/signup screen)
 - **🌍 Language support:** fasttake offers a variety of languages for all users around the globe. You can [contribute to the translation](https://fasttake.oneskyapp.com/collaboration/project?id=169458).
 
-## How to build and contribute
+## Building and Contributing
 
 ### 1. Install Flutter
 Prepare your development environment using [this official installation guide](https://flutter.dev/docs/get-started/install) from the Flutter team.
@@ -51,25 +51,5 @@ All contributions are welcome. You can follow the to-do's from the issues area o
 
 Thank you for your contributions!
 
-> ℹ️ Based on your contributions from the code, translation, design, idea or any suggestion side, you will be added to the contributors list below.
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://www.ardacebi.com"><img src="https://avatars3.githubusercontent.com/u/17576065?v=4" width="100px;" alt=""/><br /><sub><b>Arda Çebi</b></sub></a><br /><a href="https://github.com/ardacebi/fasttake/commits?author=ardacebi" title="Code">💻</a> <a href="#design-ardacebi" title="Design">🎨</a> <a href="#ideas-ardacebi" title="Ideas, Planning, & Feedback">🤔</a> <a href="#translation-ardacebi" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://baranonen.com"><img src="https://avatars1.githubusercontent.com/u/40770499?v=4" width="100px;" alt=""/><br /><sub><b>Baran Önen</b></sub></a><br /><a href="#ideas-baranonen" title="Ideas, Planning, & Feedback">🤔</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
 ## License
-fasttake is licensed under the GNU General Public License v3.0. [Learn more](https://github.com/ardacebi/fasttake/blob/master/LICENSE).
+fasttake is licensed under the MIT License. [Learn more](https://github.com/ardacebi/fasttake/blob/master/LICENSE).
